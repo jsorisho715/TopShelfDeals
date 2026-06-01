@@ -238,14 +238,22 @@ Use a fake clock in tests to assert fire times.
 ---
 
 ## 8. Config / secrets (`.env`)
+See `.env.example` for the authoritative, current list. Real keys that are read by code:
 ```
-TELEGRAM_BOT_TOKEN=...
-TELEGRAM_CHAT_ID=...          # your personal chat id
-HOME_ZIPS=85251,85255
-RADIUS_MILES=7
-GEOCODER=...                  # one-time geocode of dispensary addresses, cache results
-SCRAPE_MIN_INTERVAL_H=3
+TELEGRAM_BOT_TOKEN=...        # @BotFather token (bot)
+TELEGRAM_CHAT_ID=...          # your personal chat id (the only chat allowed by default)
+SCRAPE_USER_AGENT=...         # browser UA for requests
+SCRAPE_MIN_DELAY_SEC=2        # jittered delay between stores (sequential; concurrency fixed at 1)
+SCRAPE_MAX_DELAY_SEC=5
+RADIUS_MILES=20               # DEFAULT for the UI distance FILTER (mi) — NOT a scrape boundary;
+                              # every active store is scraped regardless of distance
+TIMEZONE=America/Phoenix      # all scheduling (Arizona has no DST)
 ```
+Reserved / present in `.env.example` but **not read by any code yet**: `TARGET_ZIPS`,
+`SCRAPE_MAX_CONCURRENCY`, `GEOCODE_PROVIDER`, `GEOCODE_API_KEY`. Geocoding is hardcoded to the free
+OpenStreetMap Nominatim endpoint (≤1 req/s, cached to `data/geocode_cache.json`). Map anchors come
+from the `locations` array in `seed/dispensaries.json`, not from any zip env var. Scrape cadence is
+set in `scheduler.py` (~3–5 h, jittered), not via an env interval.
 
 ---
 

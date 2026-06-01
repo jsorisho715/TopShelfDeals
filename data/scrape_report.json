@@ -1,54 +1,47 @@
 {
-  "generatedAt": "2026-06-01T01:09:06-07:00",
+  "generatedAt": "2026-06-01T01:39:38-07:00",
   "stores": [
     {
       "shop": "Sol Flower - Scottsdale Airpark",
       "platform": "JointCommerce",
-      "raw": 298,
-      "kept": 140,
+      "raw": 297,
+      "kept": 158,
       "status": "fresh"
     },
     {
       "shop": "Sol Flower - McClintock",
       "platform": "JointCommerce",
       "raw": 301,
-      "kept": 159,
+      "kept": 172,
       "status": "fresh"
     },
     {
       "shop": "Sol Flower - 32nd & Shea",
       "platform": "JointCommerce",
       "raw": 303,
-      "kept": 147,
+      "kept": 167,
       "status": "fresh"
     },
     {
       "shop": "YiLo Superstore - Arcadia",
       "platform": "JointCommerce",
       "raw": 291,
-      "kept": 20,
+      "kept": 19,
       "status": "fresh"
     },
     {
       "shop": "The Mint",
       "platform": "Dutchie",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 82,
+      "kept": 55,
+      "status": "fresh"
     },
     {
       "shop": "The Mint Scottsdale",
       "platform": "Dutchie",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
-    },
-    {
-      "shop": "Cookies on Camelback",
-      "platform": "Cookies.co",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 83,
+      "kept": 27,
+      "status": "fresh"
     },
     {
       "shop": "TruMed",
@@ -88,27 +81,20 @@
     {
       "shop": "JARS Cannabis - Phoenix/Arcadia",
       "platform": "Leafly",
-      "raw": 71,
+      "raw": 72,
       "kept": 6,
       "status": "fresh"
     },
     {
       "shop": "Zen Leaf - Arcadia",
       "platform": "Leafly",
-      "raw": 65,
+      "raw": 64,
       "kept": 0,
       "status": "empty"
     },
     {
       "shop": "Story Cannabis",
       "platform": "Dutchie",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
-    },
-    {
-      "shop": "Local Joint",
-      "platform": "Weedmaps",
       "raw": 0,
       "kept": 0,
       "status": "empty"
@@ -123,14 +109,14 @@
     {
       "shop": "Cannabist - Tempe",
       "platform": "Leafly",
-      "raw": 58,
+      "raw": 60,
       "kept": 1,
       "status": "fresh"
     },
     {
       "shop": "Cookies - Tempe",
       "platform": "Leafly",
-      "raw": 65,
+      "raw": 66,
       "kept": 0,
       "status": "empty"
     },
@@ -144,7 +130,7 @@
     {
       "shop": "Curaleaf - Camelback",
       "platform": "Leafly",
-      "raw": 61,
+      "raw": 60,
       "kept": 3,
       "status": "fresh"
     },
@@ -152,7 +138,7 @@
       "shop": "The Flower Shop - Phoenix",
       "platform": "Leafly",
       "raw": 72,
-      "kept": 4,
+      "kept": 5,
       "status": "fresh"
     },
     {
@@ -207,7 +193,7 @@
     {
       "shop": "Ponderosa Dispensary - Phoenix",
       "platform": "Leafly",
-      "raw": 61,
+      "raw": 62,
       "kept": 6,
       "status": "fresh"
     },
@@ -236,29 +222,29 @@
       "shop": "The Good Dispensary - Mesa/Tempe",
       "platform": "Leafly",
       "raw": 67,
-      "kept": 1,
+      "kept": 2,
       "status": "fresh"
     },
     {
       "shop": "Zen Leaf - Dunlap",
       "platform": "Leafly",
-      "raw": 66,
+      "raw": 67,
       "kept": 1,
       "status": "fresh"
     },
     {
       "shop": "Trulieve - Scottsdale",
-      "platform": "Weedmaps",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "platform": "Trulieve",
+      "raw": 145,
+      "kept": 70,
+      "status": "fresh"
     },
     {
       "shop": "Trulieve - Tempe",
-      "platform": "Weedmaps",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "platform": "Trulieve",
+      "raw": 160,
+      "kept": 80,
+      "status": "fresh"
     },
     {
       "shop": "Sticky Saguaro",
@@ -270,63 +256,63 @@
     {
       "shop": "Trulieve - Phoenix Tatum",
       "platform": "Trulieve",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 25,
+      "kept": 2,
+      "status": "fresh"
     },
     {
       "shop": "Trulieve - Phoenix North Mountain",
       "platform": "Trulieve",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 25,
+      "kept": 2,
+      "status": "fresh"
     },
     {
       "shop": "Trulieve - Phoenix Roosevelt Row",
       "platform": "Trulieve",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 30,
+      "kept": 5,
+      "status": "fresh"
     },
     {
       "shop": "Trulieve - Phoenix Alhambra",
       "platform": "Dutchie",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 25,
+      "kept": 3,
+      "status": "fresh"
     },
     {
       "shop": "Trulieve - Guadalupe",
       "platform": "Trulieve",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 25,
+      "kept": 6,
+      "status": "fresh"
     },
     {
       "shop": "Trulieve - North Mesa",
       "platform": "Trulieve",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 150,
+      "kept": 66,
+      "status": "fresh"
     },
     {
       "shop": "Trulieve - South Mesa",
       "platform": "Trulieve",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 150,
+      "kept": 72,
+      "status": "fresh"
     },
     {
       "shop": "Trulieve - Glendale",
       "platform": "Trulieve",
-      "raw": 0,
-      "kept": 0,
-      "status": "empty"
+      "raw": 25,
+      "kept": 1,
+      "status": "fresh"
     },
     {
       "shop": "YiLo Superstore - Phoenix (Thunderbird)",
       "platform": "JointCommerce",
-      "raw": 284,
+      "raw": 285,
       "kept": 6,
       "status": "fresh"
     },
@@ -334,7 +320,7 @@
       "shop": "Sol Flower - Tempe University",
       "platform": "JointCommerce",
       "raw": 300,
-      "kept": 148,
+      "kept": 160,
       "status": "fresh"
     }
   ]

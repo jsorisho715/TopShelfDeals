@@ -208,6 +208,7 @@ function Dashboard({ deals, onOpen, onPing, pingedIds, photos = {}, loc, setLoc 
   const [showFilters, setShowFilters] = dbUseState(false);
   const [locOpen, setLocOpen] = dbUseState(false);
   const [groupByShop, setGroupByShop] = dbUseState(false);
+  const [q, setQ] = dbUseState('');
   const [layout, setLayoutState] = dbUseState(() => localStorage.getItem('ts_layout') || 'cards');
   const setLayout = (v) => { setLayoutState(v); try { localStorage.setItem('ts_layout', v); } catch (e) {} };
   const [tSort, setTSort] = dbUseState({ key: 'score', dir: 'desc' });
@@ -249,6 +250,9 @@ function Dashboard({ deals, onOpen, onPing, pingedIds, photos = {}, loc, setLoc 
   const shopOptions = dbUseMemo(() => [...new Set(deals.map(d => d.shop).filter(Boolean))].sort(), [deals]);
 
   const filtered = dbUseMemo(() => {
+    const needle = q.trim().toLowerCase();
+    const matchQ = (d) => !needle || [d.product, d.brand, d.shop, d.lineage, d.type, d.area]
+      .some(v => (v || '').toLowerCase().includes(needle));
     let r = deals.filter(d =>
       (cat === 'All' || d.cat === cat) &&
       window.getDist(d, loc) <= maxDist &&
@@ -262,10 +266,11 @@ function Dashboard({ deals, onOpen, onPing, pingedIds, photos = {}, loc, setLoc 
       (tiers.length === 0 || tiers.includes(d.tier)) &&
       (shops.length === 0 || shops.includes(d.shop)) &&
       (!fireOnly || d.fire) &&
-      (!saleOnly || d.off > 0));
+      (!saleOnly || d.off > 0) &&
+      matchQ(d));
     const cmp = { score: (a, b) => b.score - a.score, price: (a, b) => a.sale - b.sale, off: (a, b) => b.off - a.off, dist: (a, b) => window.getDist(a, loc) - window.getDist(b, loc) };
     return r.sort(cmp[sort]);
-  }, [deals, cat, sort, maxDist, minOff, inStock, brands, strains, minThc, maxUnit, maxPrice, tiers, shops, fireOnly, saleOnly, loc]);
+  }, [deals, cat, sort, maxDist, minOff, inStock, brands, strains, minThc, maxUnit, maxPrice, tiers, shops, fireOnly, saleOnly, q, loc]);
 
   const hero = filtered[0];
   const rest = filtered.slice(1);
@@ -372,6 +377,22 @@ function Dashboard({ deals, onOpen, onPing, pingedIds, photos = {}, loc, setLoc 
         <h1 style={{ margin: 0, fontFamily: 'Clash Display', fontWeight: 600, fontSize: 'clamp(34px,4.6vw,58px)', lineHeight: .98, letterSpacing: '-.03em', maxWidth: 820 }}>
           A curated floor of <span style={{ fontStyle: 'italic', color: '#d4af37' }}>top-shelf</span> picks, ranked best to worst.
         </h1>
+      </div>
+
+      {/* spotlight search */}
+      <div style={{ position: 'relative', marginBottom: 16 }}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7e9384" strokeWidth="2"
+          style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}>
+          <circle cx="11" cy="11" r="7" /><path d="M21 21l-4-4" />
+        </svg>
+        <input value={q} onChange={e => setQ(e.target.value)} placeholder="Search product, brand, or dispensary…"
+          style={{ width: '100%', boxSizing: 'border-box', padding: '14px 44px', borderRadius: 14, fontFamily: 'Satoshi', fontSize: 15,
+            color: '#f3ede0', background: 'rgba(255,255,255,.04)', border: '1px solid ' + (q ? 'rgba(212,175,55,.45)' : 'rgba(255,255,255,.1)'),
+            outline: 'none', transition: 'border-color .18s' }} />
+        {q && (
+          <button onClick={() => setQ('')} title="Clear" style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)',
+            border: 'none', background: 'rgba(255,255,255,.08)', color: '#cbd8cc', width: 24, height: 24, borderRadius: 12, cursor: 'pointer', fontSize: 14, lineHeight: 1 }}>×</button>
+        )}
       </div>
 
       {/* category tabs */}

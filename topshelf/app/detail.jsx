@@ -14,7 +14,7 @@ function FactorBar({ f, max }) {
   );
 }
 
-function DealDetail({ d, onClose, onPing, pinged, loc }) {
+function DealDetail({ d, onClose, onPing, pinged, loc, purchased, onPurchase }) {
   dtUseEffect(() => {
     const k = (e) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', k);
@@ -158,6 +158,15 @@ function DealDetail({ d, onClose, onPing, pinged, loc }) {
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
                 {pinged ? 'Sent to Telegram' : 'Ping to Telegram'}
               </button>
+              {onPurchase && (
+                <button onClick={() => onPurchase(d)}
+                  title={purchased ? 'Tap to undo — removes it from your savings' : 'Counts (orig − sale) toward your savings this month'}
+                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '13px 18px', borderRadius: 12, fontWeight: 700, fontSize: 14, fontFamily: 'Satoshi', cursor: 'pointer',
+                  border: '1px solid ' + (purchased ? 'rgba(212,175,55,.5)' : 'rgba(255,255,255,.16)'), background: purchased ? 'rgba(212,175,55,.16)' : 'rgba(255,255,255,.05)', color: purchased ? '#f1dd9e' : '#e9f1ea' }}>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+                  {purchased ? 'Purchased ✓' : 'Mark purchased'}
+                </button>
+              )}
             </div>
           </div>
         </div>

@@ -600,13 +600,29 @@ def scrape_all(write_db: bool = True) -> list[dict]:
         norm_addr = " ".join((shop_addr.get(shop, "") or "").lower().split())
         if norm_addr:
             addr_groups.setdefault(norm_addr, []).append(shop)
+    # Deterministic same-address canonical name (safe to rename on); kept separate
+    # from the fuzzy ~110m geocode clusters used only for dedup identity.
+    addr_canonical: dict[str, str] = {}
     store_groups = dict(store_groups or {})
     for shops in addr_groups.values():
         if len(shops) > 1:
             canonical = sorted(shops)[0]
             for shop in shops:
+                addr_canonical[shop] = canonical
                 store_groups.setdefault(shop, canonical)
     store_groups = store_groups or None
+
+    # Canonicalize shop names to the group's display name BEFORE dedup so a single
+    # physical store listed under two names/platforms (e.g. the Dutchie + Leafly
+    # "Mint Scottsdale" at one address) collapses to ONE shop in the output. Only
+    # exact same-address groups are renamed (the fuzzy geocode clusters are used
+    # for dedup identity but not trusted to rename, to avoid merging distinct
+    # neighbors that happen to sit within ~110m).
+    if addr_canonical:
+        for d in raw_deals:
+            canon = addr_canonical.get(d.get("shop"))
+            if canon and canon != d.get("shop"):
+                d["shop"] = canon
 
     deduped = dedup(raw_deals, store_groups=store_groups)
     # NOTE: we keep full-price allowlisted top-shelf items too (so every dispensary
@@ -688,3 +704,74 @@ def get_live_deals() -> list[dict]:
         return scrape_all(write_db=False)
     except Exception:
         return []
+
+
+# ---------------------------------------------------------------------------
+# Manual CLI:  python -m app.scrape  (run one polite scrape and print a report)
+# ---------------------------------------------------------------------------
+def _print_report(deals: list[dict]) -> None:
+    """Pretty-print the last per-store scrape report + a deal summary."""
+    report = load_scrape_report()
+    stores = report.get("stores", []) or []
+    stores_sorted = sorted(stores, key=lambda s: (s.get("platform") or "", s.get("shop") or ""))
+
+    name_w = max((len(str(s.get("shop", ""))) for s in stores_sorted), default=4)
+    print(f"\nPer-store ({len(stores_sorted)} active stores) — {report.get('generatedAt')}")
+    print(f"  {'shop'.ljust(name_w)}  {'platform':<13}  {'raw':>5}  {'kept':>5}  status")
+    print("  " + "-" * (name_w + 38))
+    for s in stores_sorted:
+        print(
+            f"  {str(s.get('shop','')).ljust(name_w)}  "
+            f"{str(s.get('platform','?')):<13}  "
+            f"{int(s.get('raw') or 0):>5}  {int(s.get('kept') or 0):>5}  "
+            f"{s.get('status','?')}"
+        )
+
+    fire = sum(1 for d in deals if d.get("fire"))
+    promo = sum(1 for d in deals if d.get("promo_title"))
+    on_sale = sum(1 for d in deals if (d.get("off") or 0) > 0)
+    shops = len({d.get("shop") for d in deals if d.get("shop")})
+    producing = sum(1 for s in stores_sorted if (s.get("kept") or 0) > 0)
+    print(
+        f"\nSummary: {len(deals)} deals across {shops} shops "
+        f"({producing}/{len(stores_sorted)} stores producing) · "
+        f"{on_sale} on sale · {fire} fire · {promo} with a labeled promo."
+    )
+
+
+def main(argv: Optional[list[str]] = None) -> int:
+    """Run a single polite scrape from the command line and print a report.
+
+    Useful when adding/debugging an adapter: ``python -m app.scrape`` hits every
+    active store once (respecting the configured delays), persists to SQLite, and
+    prints the per-store coverage so a zero-coverage regression is obvious.
+    """
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        prog="python -m app.scrape",
+        description="Run one polite scrape of every active dispensary and report coverage.",
+    )
+    parser.add_argument(
+        "--no-db",
+        action="store_true",
+        help="Don't persist to SQLite (price-memory/history won't accumulate).",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Print the augmented deals as JSON instead of a human report.",
+    )
+    args = parser.parse_args(argv)
+
+    deals = scrape_all(write_db=not args.no_db)
+
+    if args.json:
+        print(json.dumps(deals, indent=2))
+    else:
+        _print_report(deals)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -2833,3 +2833,40 @@ INFO:     Application startup complete.
 ERROR:    [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8000): [winerror 10048] only one usage of each socket address (protocol/network address/port) is normally permitted
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
+. v e n v \ S c r i p t s \ p y t h o n . e x e   :   I N F O :           S t a r t e d   s e r v e r   p r o c e s s   [ 4 2 4 7 6 ]  
+ A t   C : \ U s e r s \ j o n a t \ A p p D a t a \ L o c a l \ T e m p \ p s - s c r i p t - 5 4 c c c 2 b 7 - 9 a c 0 - 4 1 c 5 - 9 b e a - a 3 b a a f e b c d 0 d . p s 1 : 8 2   c h a r : 1  
+ +   . v e n v \ S c r i p t s \ p y t h o n . e x e   - m   u v i c o r n   a p p . m a i n : a p p   - - p o r t   8 0 0 0   2 > & 1   |   O   . . .  
+ +   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  
+         +   C a t e g o r y I n f o                     :   N o t S p e c i f i e d :   ( I N F O :           S t a r t e d   s e r v e r   p r o c e s s   [ 4 2 4 7 6 ] : S t r i n g )   [ ] ,   R e m o t e E x c e p t i o n  
+         +   F u l l y Q u a l i f i e d E r r o r I d   :   N a t i v e C o m m a n d E r r o r  
+    
+ I N F O :           W a i t i n g   f o r   a p p l i c a t i o n   s t a r t u p .  
+ I N F O :           A p p l i c a t i o n   s t a r t u p   c o m p l e t e .  
+ E R R O R :         [ E r r n o   1 0 0 4 8 ]   e r r o r   w h i l e   a t t e m p t i n g   t o   b i n d   o n   a d d r e s s   ( ' 1 2 7 . 0 . 0 . 1 ' ,   8 0 0 0 ) :   [ w i n e r r o r   1 0 0 4 8 ]   o n l y   o n e   u s a g e    
+ o f   e a c h   s o c k e t   a d d r e s s   ( p r o t o c o l / n e t w o r k   a d d r e s s / p o r t )   i s   n o r m a l l y   p e r m i t t e d  
+ I N F O :           W a i t i n g   f o r   a p p l i c a t i o n   s h u t d o w n .  
+ I N F O :           A p p l i c a t i o n   s h u t d o w n   c o m p l e t e .  
+ . v e n v \ S c r i p t s \ p y t h o n . e x e   :   I N F O :           S t a r t e d   s e r v e r   p r o c e s s   [ 4 3 5 8 4 ]  
+ A t   C : \ U s e r s \ j o n a t \ A p p D a t a \ L o c a l \ T e m p \ p s - s c r i p t - 3 8 3 e 3 c c b - 9 b e f - 4 8 d 9 - b 1 c 2 - 2 6 f 9 c 4 1 7 0 4 5 f . p s 1 : 8 2   c h a r : 2 5  
+ +   . . .   - S e c o n d s   2 ;   . v e n v \ S c r i p t s \ p y t h o n . e x e   - m   u v i c o r n   a p p . m a i n : a p p   - - p o r t   8   . . .  
+ +                                   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  
+         +   C a t e g o r y I n f o                     :   N o t S p e c i f i e d :   ( I N F O :           S t a r t e d   s e r v e r   p r o c e s s   [ 4 3 5 8 4 ] : S t r i n g )   [ ] ,   R e m o t e E x c e p t i o n  
+         +   F u l l y Q u a l i f i e d E r r o r I d   :   N a t i v e C o m m a n d E r r o r  
+    
+ I N F O :           W a i t i n g   f o r   a p p l i c a t i o n   s t a r t u p .  
+ I N F O :           A p p l i c a t i o n   s t a r t u p   c o m p l e t e .  
+ I N F O :           U v i c o r n   r u n n i n g   o n   h t t p : / / 1 2 7 . 0 . 0 . 1 : 8 0 0 0   ( P r e s s   C T R L + C   t o   q u i t )  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 6 0 0 0 7   -   " G E T   / a p i / h e a l t h   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 6 1 3 1 2   -   " G E T   / . i m a g e - s l o t s . s t a t e . j s o n   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 6 1 3 3 0   -   " G E T   / a p i / h e a l t h   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 5 0 7 1 7   -   " G E T   / . i m a g e - s l o t s . s t a t e . j s o n   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 5 9 8 0 1   -   " G E T   /   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 5 9 8 0 1   -   " G E T   / T o p S h e l f / a p p / s h a r e d . j s x   H T T P / 1 . 1 "   3 0 4   N o t   M o d i f i e d  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 5 9 4 0 1   -   " G E T   / T o p S h e l f / a p p / d a s h b o a r d . j s x   H T T P / 1 . 1 "   3 0 4   N o t   M o d i f i e d  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 5 2 0 0 3   -   " G E T   / T o p S h e l f / a p p / t e l e g r a m . j s x   H T T P / 1 . 1 "   3 0 4   N o t   M o d i f i e d  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 6 3 8 4 0   -   " G E T   / T o p S h e l f / a p p / d e t a i l . j s x   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 6 3 8 4 0   -   " G E T   / a p i / b o o t s t r a p   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 6 3 8 4 0   -   " G E T   / . i m a g e - s l o t s . s t a t e . j s o n   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 6 3 8 4 0   -   " G E T   / . i m a g e - s l o t s . s t a t e . j s o n   H T T P / 1 . 1 "   2 0 0   O K  
+ I N F O :           1 2 7 . 0 . 0 . 1 : 5 8 7 4 6   -   " G E T   / . i m a g e - s l o t s . s t a t e . j s o n   H T T P / 1 . 1 "   2 0 0   O K  
+ 
