@@ -87,4 +87,13 @@ def _radius_miles() -> float:
 
 
 def bootstrap_payload() -> dict:
-    """Full ``GET /api/bootstrap`` response (CLAUDE §3) built off 
+    """Full ``GET /api/bootstrap`` response (CLAUDE §3) built off the seed data."""
+    return {
+        "deals": augment_deals(TS_DEALS),
+        "shops": TS_SHOPS,
+        "locations": TS_LOCATIONS,
+        "dist": TS_DIST,
+        "cats": TS_CATS,
+        "radiusMiles": _radius_miles(),
+        "generatedAt": _generated_at(),
+    }
