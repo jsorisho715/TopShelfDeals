@@ -1,155 +1,135 @@
 # TopShelf 🌿
 
-A personal Scottsdale **top-shelf dispensary deal aggregator** + Telegram bot. It scours nearby
-dispensary menus within 7 mi of 85251 / 85255, keeps only top-shelf brands above a quality floor,
-ranks every deal **best → worst** with a transparent score, remembers each product's price history
-to flag genuine **🔥 fire deals** (and catch fake **⚠ markup** "sales"), and answers questions over
-Telegram with ranked tables that link straight to the special and to directions.
+**Find the best top-shelf cannabis deals around Phoenix — ranked best to worst, with the fakes filtered out.**
 
-This repo currently contains the **finished hi-fi front end** (a working prototype with realistic
-sample data) plus the docs to wire up the Python backend. See [`docs/PRD.md`](docs/PRD.md) for the
-full spec and [`CLAUDE.md`](CLAUDE.md) for the step-by-step backend build guide.
+TopShelf scours nearby dispensary menus, keeps only quality top-shelf brands, and ranks every deal
+with a transparent score. It remembers each product's price history so it can flag genuine **🔥 fire
+deals** — real record-lows — and call out fake **⚠ markup** "sales" where the "original" price was
+quietly inflated first. There's also a Telegram bot that answers questions with ranked tables that
+link straight to the special and to driving directions.
+
+> 👋 **Hey, welcome!** This is my first real public little app. I built it to find good weed deals in
+> Phoenix and figured other people might find it useful too. It's early and rough in places — if you
+> want to **jump in, help out, or expand how it works, please do!** PRs, ideas, and issues are all
+> welcome. Thanks for being here. 🙏
 
 ---
 
-## What's here
+## What it does
+
+- **Aggregates** deals from nearby dispensary menus (within ~7 mi of Scottsdale/Phoenix zips).
+- **Filters to top-shelf** — only allowlisted quality brands above a price/quality floor.
+- **Ranks every deal best → worst** with a transparent, explainable score (you can see *why* each
+  deal scored the way it did).
+- **Remembers prices** over a ~14-day window to spot **real** lows (🔥) and ignore **fake** sales (⚠).
+- **Talks over Telegram** — ranked tables with `Type · $/u · %off · shop · mi` plus **Special** (menu)
+  and **Route** (Google Maps) links, daily fire-deal alerts, and a weekly digest.
+
+It started as a personal Scottsdale tool, but the goal now is a friendly, open project anyone in the
+Valley can use and improve.
+
+---
+
+## 🔞 Responsible use first
+
+- **21+ only.** This is for adults in a state where cannabis is legal. Please respect your local laws.
+- **Be a polite scraper.** TopShelf reads *public* menu pages on a slow cadence (every 3–6 h) with
+  delays and low concurrency. Please keep it that way — don't hammer dispensary sites. Aggressive
+  scraping is bad for everyone and sits in a ToS gray area.
+- **Prices change fast.** Always confirm the deal on the dispensary's own menu before you drive out.
+- Not affiliated with, endorsed by, or sponsored by any dispensary or platform.
+
+---
+
+## Try it in 30 seconds (front end only)
+
+The front end is **vanilla**: no npm, no bundler, no build step — React 18 + Babel straight from a
+CDN. The prototype runs fully on the bundled sample data in `topshelf/data/deals.js`.
+
+```bash
+# from the repo root — serve over HTTP (don't just double-click the file)
+python -m http.server 8000
+# then open http://localhost:8000/TopShelf.html
+```
+
+Any static server works (`npx serve`, `php -S`, VS Code Live Server, etc.).
+
+What works right now (all on sample data):
+
+- Dashboard with tilt/glare glass cards, a #1 hero, category tabs, sort, and distance/%off filters.
+- **Location switcher** — recomputes distances + the radius live, persists to `localStorage`.
+- **Saved filters** — a default applies on load; "Save filter" adds your own (persisted).
+- **Deal detail** — product image, description, strain type, THC/CBD, lineage, effects, a transparent
+  **score breakdown**, and a 14-day **price-memory** sparkline.
+- **🔥 fire / ⚠ markup** badges driven by the price-memory engine.
+- **Telegram view** — live `/commands` + free text → ranked tables with **Special** and **Route** links.
+
+---
+
+## How it's built
 
 ```
 TopShelf.html              ← the app (open this). React 18 + Babel via CDN, no build step.
-TopShelf/
+topshelf/
   app/
     shared.jsx             ← tilt/glare, count-up, score ring, sparkline, icons,
                               tsAugment() = scoring + fire/price-memory engine, location helpers
     dashboard.jsx          ← deal grid, hero, tabs, filters, location switcher, saved filters
     detail.jsx             ← deal detail modal: image, specs, score breakdown, price memory
     telegram.jsx           ← phone-framed bot chat: ranked rows w/ Type + Special + Route links
-    image-slot.js          ← drag-to-fill product image component (prototype affordance)
   data/
-    deals.js               ← seed data: deals, shops (addresses + menu links), locations,
-                              distance matrix, categories  ← THIS is what the API will replace
-  directions/              ← the 3 explored visual directions (Vault / Arcade / Gallery), for reference
-  Directions.html          ← side-by-side canvas of those directions
-docs/PRD.md                ← product spec (v2)
-CLAUDE.md                  ← backend build guide for Claude Code
+    deals.js               ← seed data the API replaces in production
+app/                       ← the Python backend (FastAPI + pipeline + bot + scheduler)
+docs/PRD.md                ← the product spec — read this to understand the "why"
+CLAUDE.md                  ← step-by-step backend build guide
 ```
 
-The front end is **vanilla**: no npm, no bundler. Everything loads from CDN with pinned versions.
-
----
-
-## Run the front end locally
-
-The app uses `fetch()` for a couple of sidecar files, so serve it over HTTP (don't just
-double-click the file).
+**Planned/active stack:** Python 3.13 · FastAPI · `httpx` (+ Playwright fallback) · `sqlite3` + a thin
+DAL · APScheduler (`America/Phoenix`) · `python-telegram-bot` (long-polling). Designed to run as one
+process on an always-on machine.
 
 ```bash
-# from the repo root
-python -m http.server 8000
-# then open:
-#   http://localhost:8000/TopShelf.html
-```
-
-Any static server works (`npx serve`, `php -S`, VS Code Live Server, etc.). That's it — the
-prototype runs fully on the bundled sample data in `TopShelf/data/deals.js`.
-
-What works right now (all on sample data):
-- Dashboard with tilt/glare glass cards, #1 hero, category tabs, sort, distance/%off filters.
-- **Location switcher** — recomputes distances + the 7-mi radius live, persists to `localStorage`.
-- **Saved filters** — a default is applied on load; "Save filter" adds your own (persisted).
-- **Deal detail** — product image (drag a real photo in), description, strain type, THC/CBD,
-  lineage, effects, transparent **score breakdown**, 14-day **price-memory** sparkline.
-- **🔥 fire / ⚠ markup** badges driven by the price-memory engine.
-- **Telegram view** — live `/commands` + free text → ranked tables (Type · $/u · %off · shop · mi)
-  with per-row **Special** (menu) and **Route** (Google Maps) links; once-a-day alert + digest.
-- Web → bot **Ping**: hit Ping on a card → it arrives in the Telegram chat.
-
----
-
-## Wire up the backend (tonight)
-
-Full instructions in [`CLAUDE.md`](CLAUDE.md). The short version:
-
-1. **Stand up FastAPI**, serve `TopShelf.html` + assets, and implement `GET /api/bootstrap` that
-   returns the **exact same shapes** currently in `TopShelf/data/deals.js`
-   (`deals`, `shops`, `locations`, `dist`, `cats`).
-2. **Flip the front end from static data to the API** — one small change in `TopShelf.html`
-   (replace the `deals.js` script tag with a fetch that sets `window.TS_*` then renders). The
-   exact snippet is in CLAUDE.md §4.
-3. Now the app is running on live wiring with the seed data. From there, replace the seed with the
-   real pipeline: scrapers → normalize/dedup → SQLite → score + fire → API. Then the Telegram
-   process and the scheduler.
-
-**Planned stack:** Python 3.13 · FastAPI · `httpx` (+ Playwright fallback) · `sqlite3` + thin DAL ·
-APScheduler (`America/Phoenix`) · `python-telegram-bot` (long-polling). Target host: always-on
-Windows PC (Task Scheduler / `nssm`).
-
-```bash
-# planned backend bootstrap (see CLAUDE.md for the full scaffold)
+# backend (see CLAUDE.md for the full scaffold)
 uv venv && uv pip install fastapi "uvicorn[standard]" httpx apscheduler python-telegram-bot
 uvicorn app.main:app --reload --port 8000
 ```
 
----
-
-## Run it (production)
-
-Once the backend is wired up, run the **whole stack in one process** — the FastAPI web app, the
-Telegram bot (long-polling), and the APScheduler jobs all share a single event loop:
+Run the whole stack (web + bot + scheduler in one event loop):
 
 ```powershell
 .\.venv\Scripts\python.exe run.py
 ```
 
-That's it. `run.py` serves the app on `:8000` (override with `PORT`), starts the bot, and starts the
-scheduler (scrape every ~3–6 h, the 09:00 fire-deal alert, evening recurring reminders, and the
-Sunday 18:00 digest — all `America/Phoenix`). Press **Ctrl+C** for a clean shutdown of all three.
+`run.py` serves the app on `:8000`, starts the bot, and runs the scheduler (scrape every ~3–6 h, a
+09:00 fire-deal alert, evening recurring reminders, a Sunday 18:00 digest — all `America/Phoenix`).
+It's single-instance safe via a localhost socket lock, so you can't accidentally start two bots.
+See [`docs/PRD.md`](docs/PRD.md) and [`CLAUDE.md`](CLAUDE.md) for the full details.
 
-**Single-instance safe.** Before doing anything, `run.py` grabs a process-wide lock by binding a
-localhost socket (`127.0.0.1:8765`, override with `RUN_LOCK_PORT`). If a second copy starts while the
-first is alive, the bind fails, it prints a notice, and exits `0` — so you can never accidentally
-start a duplicate Telegram poller (the cause of `Conflict: terminated by other getUpdates`). Don't
-run `python -m app.bot.bot` *and* `run.py` at the same time; `run.py` is the one entrypoint.
+---
 
-> The embedded web app is launched with `ENABLE_SCHEDULER=0` so the scheduler is owned solely by
-> `run.py` and never double-starts.
+## 🤝 Want to help?
 
-### Auto-start on the always-on Windows PC
+Yes please! This is a learning-in-public project, so beginners are genuinely welcome — see
+[`CONTRIBUTING.md`](CONTRIBUTING.md) for how to get started. A few ideas if you're looking for
+something to pick up:
 
-**Option A — Task Scheduler (built in).** Create a task that runs at logon / startup:
+- **More dispensary adapters** — add scrapers for menus/platforms TopShelf doesn't cover yet.
+- **Smarter scoring / fire detection** — tune the thresholds against real price data.
+- **Better deduping** — match the same product across platforms more reliably.
+- **More cities** — the logic isn't Phoenix-specific; help it work elsewhere.
+- **Docs, examples, screenshots, bug reports** — all hugely appreciated.
 
-- *Program/script:* `C:\Users\<you>\..PROJECTS\Active\TopShelfDeals\.venv\Scripts\python.exe`
-- *Arguments:* `run.py`
-- *Start in:* `C:\Users\<you>\..PROJECTS\Active\TopShelfDeals`
-- Settings: **Run whether user is logged on or not**, and **If the task is already running, do not
-  start a new instance** (the socket lock is a second line of defense anyway).
+The one firm rule: **don't change the front end's data shapes** — the UI renders straight off them.
+Details are in [`CONTRIBUTING.md`](CONTRIBUTING.md) and `CLAUDE.md`.
 
-Or from an elevated PowerShell:
-
-```powershell
-$dir = "C:\Users\<you>\..PROJECTS\Active\TopShelfDeals"
-$act = New-ScheduledTaskAction -Execute "$dir\.venv\Scripts\python.exe" -Argument "run.py" -WorkingDirectory $dir
-$trg = New-ScheduledTaskTrigger -AtStartup
-Register-ScheduledTask -TaskName "TopShelf" -Action $act -Trigger $trg -RunLevel Highest
-```
-
-**Option B — [nssm](https://nssm.cc/) (run as a Windows service, auto-restart on crash).**
-
-```powershell
-nssm install TopShelf "C:\...\TopShelfDeals\.venv\Scripts\python.exe" run.py
-nssm set TopShelf AppDirectory "C:\...\TopShelfDeals"
-nssm start TopShelf
-```
-
-Either way the single-instance lock guarantees that a restart, a stray manual launch, or an
-overlapping Task Scheduler trigger can't produce two bots.
+Found a bug or have an idea? [Open an issue](https://github.com/jsorisho715/TopShelfDeals/issues) —
+no idea is too small.
 
 ---
 
 ## Notes
 
-- **Product images**: in the prototype each card shows a branded procedural placeholder; the detail
-  view lets you drag in a real photo. In production, set each deal's `img` to the **scraped product
-  image URL** and the same components render it automatically.
-- **Times**: everything is `America/Phoenix` (no DST).
-- **Legal**: personal-use scraping of public menu pages sits in a ToS gray area — keep volume low,
-  cadence slow (every 3–6 h), and the tool private.
+- **Times** are all `America/Phoenix` (Arizona doesn't observe DST).
+- **Product images**: set each deal's `img` to the scraped product image URL and the cards/detail
+  render it automatically.
+- **License**: [MIT](LICENSE) — use it, fork it, build on it.
