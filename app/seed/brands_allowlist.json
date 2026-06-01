@@ -1,0 +1,49 @@
+{
+  "brands": [
+    { "canonical": "Alien Labs", "aliases": ["alien labs", "alienlabs", "alien-labs"], "tier": "S", "categories": ["Flower", "Vapes"] },
+    { "canonical": "Connected", "aliases": ["connected", "connected cannabis", "connected co", "connected cannabis co", "connected cannabis co."], "tier": "S", "categories": ["Flower"] },
+    { "canonical": "Cookies", "aliases": ["cookies", "cookies brand", "berner's cookies"], "tier": "A", "categories": ["Flower"] },
+    { "canonical": "Grow Sciences", "aliases": ["grow sciences", "growsciences", "grow-sciences", "gs"], "tier": "S", "categories": ["Flower"] },
+    { "canonical": "Aeriz", "aliases": ["aeriz", "aeriz aeroponic"], "tier": "A", "categories": ["Flower"] },
+    { "canonical": "Mohave", "aliases": ["mohave", "mohave cannabis", "mohave cannabis co", "mohave cannabis co."], "tier": "B", "categories": ["Flower"] },
+    { "canonical": "CAM", "aliases": ["cam", "cannabis & marketing", "copperstate", "copperstate farms"], "tier": "A", "categories": ["Flower"] },
+    { "canonical": "Wizard Trees", "aliases": ["wizard trees", "wizardtrees", "the wizard trees"], "tier": "S", "categories": ["Flower"] },
+    { "canonical": "High Grade AZ", "aliases": ["high grade", "high grade az", "highgrade", "high grade arizona"], "tier": "A", "categories": ["Flower"] },
+    { "canonical": "Asylum", "aliases": ["asylum", "asylum gardens"], "tier": "B", "categories": ["Flower"] },
+
+    { "canonical": "Jeeter", "aliases": ["jeeter", "baby jeeter"], "tier": "A", "categories": ["Prerolls"] },
+    { "canonical": "STIIIZY", "aliases": ["stiiizy", "stiizy", "stiiiizy"], "tier": "A", "categories": ["Prerolls", "Vapes"] },
+    { "canonical": "Sluggers", "aliases": ["sluggers", "slugger"], "tier": "B", "categories": ["Prerolls"] },
+
+    { "canonical": "Achieve", "aliases": ["achieve", "achieve wellness"], "tier": "S", "categories": ["Concentrates"] },
+    { "canonical": "Glorious Extracts", "aliases": ["glorious extracts", "glorious", "glorious cannabis"], "tier": "A", "categories": ["Concentrates"] },
+    { "canonical": "MELT", "aliases": ["melt", "melt cannabis", "melt extracts"], "tier": "A", "categories": ["Concentrates"] },
+    { "canonical": "Canamo", "aliases": ["canamo", "cáñamo", "canamo concentrates"], "tier": "B", "categories": ["Concentrates"] },
+    { "canonical": "Drip", "aliases": ["drip", "drip oils", "drip extracts", "drip vapes"], "tier": "B", "categories": ["Concentrates", "Vapes"] },
+    { "canonical": "22Red", "aliases": ["22red", "22 red", "twentytwo red"], "tier": "A", "categories": ["Flower", "Concentrates"] },
+    { "canonical": "Dr. Greenthumb's", "aliases": ["dr. greenthumb", "dr greenthumb", "dr.greenthumb", "dr. greenthumb's", "dr greenthumbs", "dr greenthumb's"], "tier": "A", "categories": ["Flower", "Concentrates"] },
+    { "canonical": "I.O. Extracts", "aliases": ["i.o. extracts", "io extracts", "i.o extracts", "io", "i.o."], "tier": "B", "categories": ["Concentrates"] },
+    { "canonical": "WTF Extracts", "aliases": ["wtf extracts", "wtf", "wtf - extracts"], "tier": "B", "categories": ["Concentrates", "Vapes", "Prerolls"] },
+    { "canonical": "Sofa King", "aliases": ["sofa king", "sofa king medicinal"], "tier": "B", "categories": ["Edibles", "Flower"] },
+
+    { "canonical": "Wyld", "aliases": ["wyld", "wyld gummies"], "tier": "S", "categories": ["Edibles"] },
+    { "canonical": "Wana", "aliases": ["wana", "wana brands", "wana gummies"], "tier": "A", "categories": ["Edibles"] },
+    { "canonical": "Baked Bros", "aliases": ["baked bros", "bakedbros", "baked brothers"], "tier": "B", "categories": ["Edibles"] },
+    { "canonical": "Sublime", "aliases": ["sublime", "sublime edibles", "sublime brands"], "tier": "A", "categories": ["Edibles", "Flower"] },
+    { "canonical": "Grön", "aliases": ["gron", "grön", "gron chocolate"], "tier": "A", "categories": ["Edibles"] },
+
+    { "canonical": "Dime", "aliases": ["dime", "dime industries", "dime bag"], "tier": "B", "categories": ["Vapes"] },
+
+    { "canonical": "Green Dot Labs", "aliases": ["green dot labs", "gdl", "greendot labs", "green dot"], "tier": "S", "categories": ["Flower", "Concentrates", "Vapes"] },
+    { "canonical": "Modern Flower", "aliases": ["modern flower", "modernflower"], "tier": "A", "categories": ["Flower"] },
+    { "canonical": "Shango", "aliases": ["shango", "shango premium cannabis"], "tier": "A", "categories": ["Flower", "Concentrates", "Vapes", "Edibles"] },
+    { "canonical": "Khalifa Kush", "aliases": ["khalifa kush", "khalifa", "kk"], "tier": "A", "categories": ["Flower"] },
+    { "canonical": "MADE", "aliases": ["made", "made cannabis", "made brands"], "tier": "B", "categories": ["Flower"] },
+    { "canonical": "Timeless", "aliases": ["timeless", "timeless vapes", "timeless cannabis"], "tier": "A", "categories": ["Vapes", "Concentrates"] },
+
+    { "canonical": "Grassroots", "aliases": ["grassroots", "grassroots cannabis"], "tier": "A", "categories": ["Flower", "Concentrates"] },
+    { "canonical": "Seed Junky", "aliases": ["seed junky", "seed junky genetics"], "tier": "S", "categories": ["Flower"] },
+    { "canonical": "OGeez!", "aliases": ["ogeez", "ogeez!", "ogeez brands"], "tier": "A", "categories": ["Edibles"] },
+    { "canonical": "Smokiez", "aliases": ["smokiez", "smokiez edibles"], "tier": "A", "categories": ["Edibles"] }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "page": 0,
+  "nbPages": 1,
+  "nbHits": 3,
+  "hitsPerPage": 100,
+  "hits": [
+    {
+      "product_id": 2700101,
+      "objectID": "40012345",
+      "name": "Atomic Apple",
+      "brand": "Alien Labs",
+      "kind": "flower",
+      "kind_subtype": "Flower",
+      "category": "hybrid",
+      "root_types": ["flower"],
+      "root_subtype": "Flower",
+      "available_weights": ["eighth_ounce", "half_ounce", "ounce"],
+      "amount": null,
+      "net_weight_grams": 3.5,
+      "percent_thc": 31.4,
+      "percent_cbd": 0.1,
+      "product_percent_thc": 31.4,
+      "bucket_price": 60,
+      "sort_price": 45,
+      "price_eighth_ounce": 60,
+      "price_half_ounce": 200,
+      "price_ounce": 380,
+      "discounted_price_eighth_ounce": 45,
+      "special_price_eighth_ounce": null,
+      "image_urls": [
+        "https://product-assets.iheartjane.com/photos/aa/11/aa11atomicapple.jpeg"
+      ],
+      "product_photos": [
+        {
+          "id": "https://product-assets.iheartjane.com/photos/aa/11/aa11atomicapple.jpeg",
+          "urls": {
+            "small": "https://product-assets.iheartjane.com/cdn-cgi/image/width=174,fit=scale-down/photos/aa/11/aa11atomicapple.jpeg",
+            "original": "https://product-assets.iheartjane.com/photos/aa/11/aa11atomicapple.jpeg"
+          },
+          "position": 0
+        }
+      ],
+      "url_slug": "alien-labs-atomic-apple",
+      "searchable_slug": "alien-labs-atomic-apple-2700101",
+      "available_for_pickup": true,
+      "available_for_delivery": false,
+      "max_cart_quantity": 8,
+      "type": "flower"
+    },
+    {
+      "product_id": 2700102,
+      "objectID": "40012346",
+      "name": "Grape Gas",
+      "brand": "Grow Sciences",
+      "kind": "flower",
+      "kind_subtype": "Flower",
+      "category": "indica",
+      "root_types": ["flower"],
+      "available_weights": ["eighth_ounce"],
+      "amount": null,
+      "net_weight_grams": 3.5,
+      "percent_thc": 27.0,
+      "percent_cbd": 0.0,
+      "bucket_price": 50,
+      "sort_price": 50,
+      "price_eighth_ounce": 50,
+      "discounted_price_eighth_ounce": null,
+      "image_urls": [
+        "https://product-assets.iheartjane.com/photos/bb/22/bb22grapegas.png"
+      ],
+      "product_photos": [],
+      "url_slug": "grow-sciences-grape-gas",
+      "available_for_pickup": true,
+      "max_cart_quantity": 6,
+      "type": "flower"
+    },
+    {
+      "product_id": 2647464,
+      "objectID": "33389285",
+      "name": "Jungle OG",
+      "brand": "8-BIT",
+      "kind": "vape",
+      "kind_subtype": "Rosin Cartridge",
+      "category": "hybrid",
+      "root_types": ["vape", "vape:Cartridges"],
+      "root_subtype": "Cartridges",
+      "available_weights": ["gram"],
+      "amount": null,
+      "net_weight_grams": 1,
+      "percent_thc": null,
+      "percent_cbd": null,
+      "bucket_price": 16,
+      "sort_price": 16,
+      "price_gram": 16,
+      "discounted_price_gram": null,
+      "image_urls": [
+        "https://product-assets.iheartjane.com/photos/de/3d/de3d648d.jpeg"
+      ],
+      "product_photos": [
+        {
+          "id": "https://product-assets.iheartjane.com/photos/de/3d/de3d648d.jpeg",
+          "urls": {
+            "original": "https://product-assets.iheartjane.com/photos/de/3d/de3d648d.jpeg"
+          },
+          "position": 0
+        }
+      ],
+      "url_slug": "8-bit-jungle-og",
+      "available_for_pickup": true,
+      "max_cart_quantity": 19,
+      "type": "vape"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "props": {
+    "pageProps": {
+      "menuData": {
+        "menuItems": [
+          {
+            "id": 3329280877,
+            "name": "22Red - Flower - Mr Jack (S) (3.5g)",
+            "brandName": "22Red",
+            "productCategory": "Flower",
+            "strainName": "Mr Jack (S)",
+            "thcContent": 26.07,
+            "thcContentLabel": "THC 26.07%",
+            "cbdContent": null,
+            "price": 35,
+            "sortPrice": 35,
+            "displayQuantity": "3.5g",
+            "imageUrl": "https://leaflogixmedia.blob.core.windows.net/product-image/3900a506-f0ec-4646-9d20-75a0e3834cc9.jpg",
+            "formattedThumbnailUrl": "https://leafly-production.imgix.net/https%3A%2F%2Fleaflogixmedia.blob.core.windows.net%2Fproduct-image%2F3900a506-f0ec-4646-9d20-75a0e3834cc9.jpg?dpr=2&h=115&fit=fillmax&s=d566019d43e4a4e7a676c8cef82c220c",
+            "stockQuantity": 1,
+            "variants": [
+              {
+                "id": 3329280877,
+                "price": 35,
+                "pricePerUnit": 10,
+                "displayQuantity": "3.5g"
+              }
+            ]
+          },
+          {
+            "id": 3267871757,
+            "name": "Grow Sciences Jar 3.7g Scented Marker",
+            "brandName": "Grow Sciences",
+            "productCategory": "Flower",
+            "strainName": "Scented Marker",
+            "thcContent": 35.17,
+            "thcContentLabel": "THC 35.17%",
+            "cbdContent": null,
+            "price": 50,
+            "sortPrice": 30,
+            "displayQuantity": "3.7g",
+            "imageUrl": "https://leaflogixmedia.blob.core.windows.net/product-image/8009afa6-e8bb-41fe-a203-b55eb7246346.jpg",
+            "formattedThumbnailUrl": "https://leafly-production.imgix.net/https%3A%2F%2Fleaflogixmedia.blob.core.windows.net%2Fproduct-image%2F8009afa6-e8bb-41fe-a203-b55eb7246346.jpg?dpr=2&h=115&fit=fillmax&s=da279591449fcf3c8fa48773023bf644",
+            "stockQuantity": 10,
+            "variants": [
+              {
+                "id": 3267871757,
+                "price": 50,
+                "pricePerUnit": 13.51,
+                "displayQuantity": "3.7g",
+                "deal": {
+                  "discountAmount": 3000,
+                  "discountType": "fixed_cent",
+                  "discountedPrice": 3000
+                }
+              }
+            ]
+          },
+          {
+            "id": 2937143921,
+            "name": "Mohave Reserve 3.5g King Street Kush (I/H)",
+            "brandName": "Mohave Cannabis Co.",
+            "productCategory": "Flower",
+            "strainName": "King Street Kush",
+            "thcContent": 26.4,
+            "thcContentLabel": "THC 26.4%",
+            "cbdContent": null,
+            "price": 35,
+            "sortPrice": 17,
+            "displayQuantity": "3.5g",
+            "imageUrl": "https://leaflogixmedia.blob.core.windows.net/product-image/0757c326-9516-41d2-9d00-4b526a6017b1.jpg",
+            "formattedThumbnailUrl": "https://leafly-production.imgix.net/https%3A%2F%2Fleaflogixmedia.blob.core.windows.net%2Fproduct-image%2F0757c326-9516-41d2-9d00-4b526a6017b1.jpg?dpr=2&h=115&fit=fillmax&s=29e0a12e2b501fff56223daa7bb9f18a",
+            "stockQuantity": 10,
+            "variants": [
+              {
+                "id": 2937143921,
+                "price": 35,
+                "pricePerUnit": 10,
+                "displayQuantity": "3.5g",
+                "deal": {
+                  "discountAmount": 1700,
+                  "discountType": "fixed_cent",
+                  "discountedPrice": 1700
+                }
+              }
+            ]
+          }
+        ],
+        "totalItems": 3
+      }
+    }
+  }
+}

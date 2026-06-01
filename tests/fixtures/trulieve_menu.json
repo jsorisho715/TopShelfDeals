@@ -1,0 +1,93 @@
+{
+  "storeCName": "harvest-of-scottsdale",
+  "data": {
+    "filteredProducts": {
+      "products": [
+        {
+          "id": "65454b1383682100010d6692",
+          "Name": "Topanga x Mike Larry Live Resin Badder",
+          "brand": { "name": "Grow Sciences" },
+          "brandName": "Grow Sciences",
+          "type": "Concentrate",
+          "subcategory": "badder",
+          "strainType": "Hybrid",
+          "Prices": [39],
+          "recPrices": [39],
+          "recSpecialPrices": [27.3],
+          "medicalSpecialPrices": [27.3],
+          "Options": ["1g"],
+          "rawOptions": ["1.0g"],
+          "weight": 1000,
+          "measurements": {
+            "netWeight": { "unit": "MILLIGRAMS", "values": [1000] }
+          },
+          "THCContent": { "unit": "PERCENTAGE", "range": [74.56] },
+          "CBDContent": { "unit": "PERCENTAGE", "range": [0] },
+          "Image": "https://s3-us-west-2.amazonaws.com/dutchie-images/7f8726388aa1da94c13cc2b810f12b59",
+          "images": [
+            { "url": "https://s3-us-west-2.amazonaws.com/dutchie-images/7f8726388aa1da94c13cc2b810f12b59", "active": true }
+          ],
+          "cName": "topanga-x-mike-larry-live-resin-badder-11894",
+          "DispensaryID": "5eaf489fa8a61801212577cc",
+          "Status": "Active"
+        },
+        {
+          "id": "00000000cherrypaloma0001",
+          "Name": "Cherry Paloma Cured Rosin Batter",
+          "brand": { "name": "drip" },
+          "brandName": "drip",
+          "type": "Concentrate",
+          "subcategory": "rosin",
+          "strainType": "Sativa",
+          "Prices": [55],
+          "recPrices": [55],
+          "recSpecialPrices": [38.5],
+          "medicalSpecialPrices": [38.5],
+          "Options": ["1g"],
+          "rawOptions": ["1.0g"],
+          "weight": 1000,
+          "measurements": {
+            "netWeight": { "unit": "MILLIGRAMS", "values": [1000] }
+          },
+          "THCContent": { "unit": "PERCENTAGE", "range": [73.26] },
+          "CBDContent": { "unit": "PERCENTAGE", "range": [0.14] },
+          "Image": "https://s3-us-west-2.amazonaws.com/dutchie-images/8218a10b9ba2769c4e0970a365ef8bf3",
+          "images": [
+            { "url": "https://s3-us-west-2.amazonaws.com/dutchie-images/8218a10b9ba2769c4e0970a365ef8bf3", "active": true }
+          ],
+          "cName": "cherry-paloma-cured-rosin-batter-90210",
+          "DispensaryID": "5eaf489fa8a61801212577cc",
+          "Status": "Active"
+        },
+        {
+          "id": "694f09add10fbf67953f774d",
+          "Name": "Monet Live Resin Badder",
+          "brand": { "name": "Green Dot Labs" },
+          "brandName": "Green Dot Labs",
+          "type": "Concentrate",
+          "subcategory": "badder",
+          "strainType": "Hybrid",
+          "Prices": [36],
+          "recPrices": [36],
+          "recSpecialPrices": [],
+          "medicalSpecialPrices": [],
+          "Options": ["1g"],
+          "rawOptions": ["1.0g"],
+          "weight": 1000,
+          "measurements": {
+            "netWeight": { "unit": "MILLIGRAMS", "values": [1000] }
+          },
+          "THCContent": { "unit": "PERCENTAGE", "range": [77.88] },
+          "CBDContent": { "unit": "PERCENTAGE", "range": [0] },
+          "Image": "https://s3-us-west-2.amazonaws.com/dutchie-images/67115bfa1f1a919b64f58ab0ca0890c8",
+          "images": [
+            { "url": "https://s3-us-west-2.amazonaws.com/dutchie-images/67115bfa1f1a919b64f58ab0ca0890c8", "active": true }
+          ],
+          "cName": "monet-live-resin-badder-55885",
+          "DispensaryID": "5eaf489fa8a61801212577cc",
+          "Status": "Active"
+        }
+      ]
+    }
+  }
+}

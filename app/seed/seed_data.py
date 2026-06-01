@@ -1,0 +1,275 @@
+"""Seed data ported verbatim from ``topshelf/data/deals.js``.
+
+These are the raw (un-augmented) deal dicts plus the supporting shop/location/
+distance tables. Field names + types + values match the JS source exactly so the
+SPA renders identically. The pipeline (``app.pipeline.serialize.augment_deals``)
+adds the derived fields (hist, factors, fire, etc.).
+
+``img`` is intentionally NOT included on the raw deals here — the serializer
+guarantees an ``img`` key (default ``None``) on every augmented deal.
+"""
+
+# ---------------------------------------------------------------------------
+# Raw deals (window.TS_DEALS)
+# ---------------------------------------------------------------------------
+TS_DEALS = [
+    # ---- FLOWER ----
+    {
+        "id": "fl1", "cat": "Flower", "product": "Atomic Apple", "brand": "Alien Labs", "tier": "S",
+        "type": "Hybrid", "lineage": "Sour Apple × Triangle Kush", "thc": 31.4, "cbd": 0.1,
+        "desc": "Loud, gassy hybrid with a crisp green-apple snap. Dense, frosted buds — a flagship Alien Labs drop that rarely goes on sale.",
+        "effects": ["Euphoric", "Creative", "Relaxed"],
+        "shop": "Sol Flower", "area": "Scottsdale", "dist": 2.3, "size": "3.5g",
+        "orig": 60, "sale": 38, "unit": 10.9, "unitLabel": "/g", "off": 37, "score": 96,
+        "seen": "12m ago", "stock": True, "recurring": True, "dow": "Fri", "hot": True,
+    },
+    {
+        "id": "fl2", "cat": "Flower", "product": "Gelonade", "brand": "Connected", "tier": "S",
+        "type": "Sativa", "lineage": "Lemon Tree × Gelato 41", "thc": 28.9, "cbd": 0.2,
+        "desc": "Bright, citrus-forward sativa from Connected's coveted genetics. Sweet lemonade nose with a heady, uplifting kick.",
+        "effects": ["Uplifted", "Energetic", "Focused"],
+        "shop": "The Mint", "area": "Tempe", "dist": 4.1, "size": "3.5g",
+        "orig": 55, "sale": 35, "unit": 10.0, "unitLabel": "/g", "off": 36, "score": 94,
+        "seen": "31m ago", "stock": True, "recurring": False, "dow": None, "hot": True,
+    },
+    {
+        "id": "fl3", "cat": "Flower", "product": "Lemon Cherry Gelato", "brand": "Cookies", "tier": "A",
+        "type": "Hybrid", "lineage": "Sunset Sherbet × GSC", "thc": 26.2, "cbd": 0.1,
+        "desc": "The famous LCG — sweet cherry and citrus over a creamy gelato base. Balanced hybrid, beautiful purple-tipped bud.",
+        "effects": ["Happy", "Calm", "Giggly"],
+        "shop": "Cookies on Camelback", "area": "Phoenix", "dist": 5.8, "size": "3.5g",
+        "orig": 50, "sale": 35, "unit": 10.0, "unitLabel": "/g", "off": 30, "score": 88,
+        "seen": "1h ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+    {
+        "id": "fl4", "cat": "Flower", "product": "Banana OG", "brand": "Grow Sciences", "tier": "S",
+        "type": "Indica", "lineage": "Banana × OG Kush", "thc": 29.7, "cbd": 0.1,
+        "desc": "Heavy indica with ripe-banana sweetness and an OG funk. Grow Sciences' signature trim and terps — a true nightcap.",
+        "effects": ["Sleepy", "Relaxed", "Hungry"],
+        "shop": "TruMed", "area": "Phoenix", "dist": 6.4, "size": "3.5g",
+        "orig": 65, "sale": 45, "unit": 12.9, "unitLabel": "/g", "off": 31, "score": 90,
+        "seen": "2h ago", "stock": True, "recurring": True, "dow": "Tue", "hot": False,
+    },
+    {
+        "id": "fl5", "cat": "Flower", "product": "Frosted Cake", "brand": "Aeriz", "tier": "A",
+        "type": "Indica", "lineage": "Wedding Cake × Jet Fuel Gelato", "thc": 27.5, "cbd": 0.2,
+        "desc": "Aeriz aeroponic flower — exceptionally clean. Vanilla-cake sweetness with a relaxing, full-body settle.",
+        "effects": ["Relaxed", "Calm", "Sleepy"],
+        "shop": "Sunday Goods", "area": "Scottsdale", "dist": 3.0, "size": "3.5g",
+        "orig": 45, "sale": 30, "unit": 8.6, "unitLabel": "/g", "off": 33, "score": 89,
+        "seen": "44m ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+    {
+        "id": "fl6", "cat": "Flower", "product": "Wedding Cake", "brand": "Mohave", "tier": "B",
+        "type": "Hybrid", "lineage": "Triangle Kush × Animal Mints", "thc": 24.1, "cbd": 0.1,
+        "desc": "Reliable, tangy-sweet hybrid in a value 7g jar. Solid mid-tier daily driver when the top shelf is sold out.",
+        "effects": ["Relaxed", "Happy", "Euphoric"],
+        "shop": "Nirvana Center", "area": "Scottsdale", "dist": 3.9, "size": "7g",
+        "orig": 70, "sale": 50, "unit": 7.1, "unitLabel": "/g", "off": 29, "score": 79,
+        "seen": "3h ago", "stock": False, "recurring": False, "dow": None, "hot": False,
+    },
+
+    # ---- PREROLLS ----
+    {
+        "id": "pr1", "cat": "Prerolls", "product": "Baby Jeeter Infused 5pk", "brand": "Jeeter", "tier": "A",
+        "type": "Hybrid", "lineage": "Rotating strain · infused + kief-rolled", "thc": 35.1, "cbd": 0.2,
+        "desc": "Five half-gram infused prerolls dusted in kief. Smooth, slow burn and a big hit — the go-to crowd-pleaser pack.",
+        "effects": ["Euphoric", "Relaxed", "Social"],
+        "shop": "Story Cannabis", "area": "Scottsdale", "dist": 2.8, "size": "2.5g",
+        "orig": 40, "sale": 25, "unit": 10.0, "unitLabel": "/g", "off": 38, "score": 92,
+        "seen": "18m ago", "stock": True, "recurring": True, "dow": "Wed", "hot": True,
+    },
+    {
+        "id": "pr2", "cat": "Prerolls", "product": "40s Infused Preroll", "brand": "STIIIZY", "tier": "A",
+        "type": "Sativa", "lineage": "Liquid-diamond infused", "thc": 38.6, "cbd": 0.1,
+        "desc": "Single gram infused with liquid diamonds for a heavy, fast onset. Punchy sativa lean — small but mighty.",
+        "effects": ["Energetic", "Uplifted", "Heady"],
+        "shop": "The Mint", "area": "Tempe", "dist": 4.1, "size": "1g",
+        "orig": 18, "sale": 12, "unit": 12.0, "unitLabel": "/g", "off": 33, "score": 85,
+        "seen": "55m ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+    {
+        "id": "pr3", "cat": "Prerolls", "product": "Sluggers Diamond Preroll", "brand": "Sluggers", "tier": "B",
+        "type": "Hybrid", "lineage": "Diamond + sauce infused", "thc": 41.2, "cbd": 0.1,
+        "desc": "Baseball-themed infused preroll, knock-it-out-of-the-park potency. A heavy hitter for experienced smokers.",
+        "effects": ["Relaxed", "Euphoric", "Sleepy"],
+        "shop": "Local Joint", "area": "Scottsdale", "dist": 5.1, "size": "1.3g",
+        "orig": 22, "sale": 16, "unit": 12.3, "unitLabel": "/g", "off": 27, "score": 76,
+        "seen": "2h ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+
+    # ---- EDIBLES ----
+    {
+        "id": "ed1", "cat": "Edibles", "product": "Sour Apple Gummies 100mg", "brand": "Wyld", "tier": "S",
+        "type": "Sativa", "lineage": "Real-fruit · 10× 10mg pieces", "thc": 100, "cbd": 0,
+        "desc": "Wyld's best-selling real-fruit gummies — tart sour-apple, perfectly dosed at 10mg each. Clean, consistent, fast-ish onset.",
+        "effects": ["Uplifted", "Happy", "Social"],
+        "shop": "Sunday Goods", "area": "Scottsdale", "dist": 3.0, "size": "100mg",
+        "orig": 25, "sale": 15, "unit": 1.5, "unitLabel": "/10mg", "off": 40, "score": 95,
+        "seen": "9m ago", "stock": True, "recurring": True, "dow": "Mon", "hot": True,
+    },
+    {
+        "id": "ed2", "cat": "Edibles", "product": "Mango Gummies 100mg", "brand": "Wana", "tier": "A",
+        "type": "Hybrid", "lineage": "Enhanced w/ fast-acting blend · 10× 10mg", "thc": 100, "cbd": 0,
+        "desc": "Wana's enhanced-onset mango gummies. Balanced hybrid effect, reliable and smooth — an edible staple.",
+        "effects": ["Relaxed", "Happy", "Calm"],
+        "shop": "Curaleaf", "area": "Phoenix", "dist": 6.0, "size": "100mg",
+        "orig": 22, "sale": 14, "unit": 1.4, "unitLabel": "/10mg", "off": 36, "score": 90,
+        "seen": "40m ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+    {
+        "id": "ed3", "cat": "Edibles", "product": "Watermelon Bites 100mg", "brand": "Baked Bros", "tier": "B",
+        "type": "Indica", "lineage": "Nano-emulsified · 10× 10mg", "thc": 100, "cbd": 0,
+        "desc": "Juicy watermelon nano gummies with a quicker kick-in. Indica-leaning — a budget-friendly evening pick.",
+        "effects": ["Relaxed", "Sleepy", "Calm"],
+        "shop": "Nirvana Center", "area": "Scottsdale", "dist": 3.9, "size": "100mg",
+        "orig": 20, "sale": 14, "unit": 1.4, "unitLabel": "/10mg", "off": 30, "score": 81,
+        "seen": "1h ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+    {
+        "id": "ed4", "cat": "Edibles", "product": "Dark Chocolate Bar 100mg", "brand": "Grön", "tier": "A",
+        "type": "Indica", "lineage": "Single-origin cacao · 10× 10mg", "thc": 100, "cbd": 0,
+        "desc": "Grön's silky dark-chocolate bar, scored into 10mg squares. Rich, not grassy — a refined indica wind-down.",
+        "effects": ["Relaxed", "Sleepy", "Soothed"],
+        "shop": "Sol Flower", "area": "Scottsdale", "dist": 2.3, "size": "100mg",
+        "orig": 24, "sale": 16, "unit": 1.6, "unitLabel": "/10mg", "off": 33, "score": 84,
+        "seen": "2h ago", "stock": True, "recurring": True, "dow": "Thu", "hot": False,
+    },
+
+    # ---- CONCENTRATES / HASH ----
+    {
+        "id": "co1", "cat": "Concentrates", "product": "Live Rosin Badder", "brand": "Achieve", "tier": "S",
+        "type": "Indica", "lineage": "Solventless · 1st-press live rosin", "thc": 78.3, "cbd": 0.4,
+        "desc": "Solventless first-press live rosin badder — full-spectrum, terp-loaded, whipped to a creamy scoop. Connoisseur-grade hash.",
+        "effects": ["Euphoric", "Relaxed", "Tasty"],
+        "shop": "TruMed", "area": "Phoenix", "dist": 6.4, "size": "1g",
+        "orig": 50, "sale": 30, "unit": 30.0, "unitLabel": "/g", "off": 40, "score": 97,
+        "seen": "6m ago", "stock": True, "recurring": True, "dow": "Sun", "hot": True,
+    },
+    {
+        "id": "co2", "cat": "Concentrates", "product": "Diamonds & Sauce", "brand": "Glorious Extracts", "tier": "A",
+        "type": "Hybrid", "lineage": "THCa diamonds in HTE sauce", "thc": 84.1, "cbd": 0.2,
+        "desc": "Big THCa diamonds bathed in high-terpene sauce. Sparkly, potent, and loud — excellent dab value when it drops.",
+        "effects": ["Euphoric", "Heady", "Relaxed"],
+        "shop": "Story Cannabis", "area": "Scottsdale", "dist": 2.8, "size": "1g",
+        "orig": 45, "sale": 28, "unit": 28.0, "unitLabel": "/g", "off": 38, "score": 93,
+        "seen": "22m ago", "stock": True, "recurring": False, "dow": None, "hot": True,
+    },
+    {
+        "id": "co3", "cat": "Concentrates", "product": "Live Resin Sugar", "brand": "MELT", "tier": "A",
+        "type": "Sativa", "lineage": "Fresh-frozen live resin", "thc": 81.0, "cbd": 0.3,
+        "desc": "Fresh-frozen live resin sugar with a glistening, terpy texture. Bright sativa flavor that holds up dab after dab.",
+        "effects": ["Uplifted", "Creative", "Tasty"],
+        "shop": "The Mint", "area": "Tempe", "dist": 4.1, "size": "1g",
+        "orig": 40, "sale": 26, "unit": 26.0, "unitLabel": "/g", "off": 35, "score": 87,
+        "seen": "1h ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+
+    # ---- VAPES ----
+    {
+        "id": "va1", "cat": "Vapes", "product": "Live Resin Cart — Atomic Apple", "brand": "Alien Labs", "tier": "S",
+        "type": "Hybrid", "lineage": "Live resin · 510 thread", "thc": 86.4, "cbd": 0.2,
+        "desc": "Alien Labs live-resin cart carrying the full Atomic Apple terp profile. Smooth pulls, true-to-flower flavor.",
+        "effects": ["Euphoric", "Creative", "Relaxed"],
+        "shop": "Sol Flower", "area": "Scottsdale", "dist": 2.3, "size": "1g",
+        "orig": 55, "sale": 35, "unit": 35.0, "unitLabel": "/g", "off": 36, "score": 94,
+        "seen": "14m ago", "stock": True, "recurring": False, "dow": None, "hot": True,
+    },
+    {
+        "id": "va2", "cat": "Vapes", "product": "Liquid Diamonds Pod", "brand": "STIIIZY", "tier": "A",
+        "type": "Indica", "lineage": "Liquid diamonds · STIIIZY pod", "thc": 88.2, "cbd": 0.1,
+        "desc": "STIIIZY liquid-diamonds pod — sky-high potency in the familiar pod format. Heavy indica lean, big clouds.",
+        "effects": ["Relaxed", "Sleepy", "Euphoric"],
+        "shop": "Local Joint", "area": "Scottsdale", "dist": 5.1, "size": "1g",
+        "orig": 45, "sale": 30, "unit": 30.0, "unitLabel": "/g", "off": 33, "score": 86,
+        "seen": "48m ago", "stock": True, "recurring": True, "dow": "Sat", "hot": False,
+    },
+    {
+        "id": "va3", "cat": "Vapes", "product": "510 Cart — Blueberry", "brand": "Dime", "tier": "B",
+        "type": "Indica", "lineage": "Distillate + botanical terps", "thc": 82.7, "cbd": 0.1,
+        "desc": "Dime's blueberry 510 cart — sweet, mellow, and easy on the wallet. A dependable value vape for daily use.",
+        "effects": ["Relaxed", "Calm", "Sleepy"],
+        "shop": "Curaleaf", "area": "Phoenix", "dist": 6.0, "size": "1g",
+        "orig": 35, "sale": 24, "unit": 24.0, "unitLabel": "/g", "off": 31, "score": 78,
+        "seen": "3h ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+
+    # ---- FULL-PRICE TOP-SHELF (no active deal; orig == sale, off == 0) ----
+    {
+        "id": "fp1", "cat": "Flower", "product": "Biscotti", "brand": "Connected", "tier": "S",
+        "type": "Hybrid", "lineage": "Gelato × Florida OG × South Florida OG", "thc": 27.8, "cbd": 0.1,
+        "desc": "Connected's dense, cookie-and-gas Biscotti at its everyday menu price. A flagship top-shelf jar that rarely discounts.",
+        "effects": ["Relaxed", "Euphoric", "Happy"],
+        "shop": "Sunday Goods", "area": "Scottsdale", "dist": 3.0, "size": "3.5g",
+        "orig": 55, "sale": 55, "unit": 15.7, "unitLabel": "/g", "off": 0, "score": 82,
+        "seen": "21m ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+    {
+        "id": "fp2", "cat": "Vapes", "product": "Live Resin Cart — Gelonade", "brand": "Alien Labs", "tier": "S",
+        "type": "Sativa", "lineage": "Live resin · 510 thread", "thc": 87.1, "cbd": 0.2,
+        "desc": "Alien Labs live-resin cart in the bright Gelonade profile, at its standard shelf price. True-to-flower terps, smooth pulls.",
+        "effects": ["Uplifted", "Creative", "Focused"],
+        "shop": "Sol Flower", "area": "Scottsdale", "dist": 2.3, "size": "1g",
+        "orig": 50, "sale": 50, "unit": 50.0, "unitLabel": "/g", "off": 0, "score": 80,
+        "seen": "33m ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+    {
+        "id": "fp3", "cat": "Edibles", "product": "Marionberry Gummies 100mg", "brand": "Wyld", "tier": "S",
+        "type": "Indica", "lineage": "Real-fruit · 10× 10mg pieces", "thc": 100, "cbd": 0,
+        "desc": "Wyld's marionberry real-fruit gummies at the regular menu price — perfectly dosed 10mg pieces, clean and consistent.",
+        "effects": ["Relaxed", "Calm", "Happy"],
+        "shop": "Curaleaf", "area": "Phoenix", "dist": 6.0, "size": "100mg",
+        "orig": 25, "sale": 25, "unit": 2.5, "unitLabel": "/10mg", "off": 0, "score": 78,
+        "seen": "1h ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+    {
+        "id": "fp4", "cat": "Concentrates", "product": "Live Rosin Jam", "brand": "Achieve", "tier": "S",
+        "type": "Hybrid", "lineage": "Solventless · cold-cure live rosin", "thc": 76.9, "cbd": 0.5,
+        "desc": "Achieve's cold-cure solventless rosin jam at its everyday price. Full-spectrum, terp-forward, connoisseur-grade hash.",
+        "effects": ["Euphoric", "Tasty", "Relaxed"],
+        "shop": "TruMed", "area": "Phoenix", "dist": 6.4, "size": "1g",
+        "orig": 60, "sale": 60, "unit": 60.0, "unitLabel": "/g", "off": 0, "score": 83,
+        "seen": "2h ago", "stock": True, "recurring": False, "dow": None, "hot": False,
+    },
+]
+
+# ---------------------------------------------------------------------------
+# Categories (window.TS_CATS)
+# ---------------------------------------------------------------------------
+TS_CATS = ["All", "Flower", "Prerolls", "Edibles", "Concentrates", "Vapes"]
+
+# ---------------------------------------------------------------------------
+# Dispensary directory (window.TS_SHOPS)
+# ---------------------------------------------------------------------------
+TS_SHOPS = {
+    "Sol Flower":           {"addr": "8729 E Manzanita Dr, Scottsdale, AZ 85258", "platform": "Sol Flower", "menu": "https://solflower.com/scottsdale/menu/"},
+    "The Mint":             {"addr": "5210 S Priest Dr, Guadalupe, AZ 85283", "platform": "Dutchie", "menu": "https://dutchie.com/dispensary/the-mint-cannabis-tempe"},
+    "Cookies on Camelback": {"addr": "1842 W Camelback Rd, Phoenix, AZ 85015", "platform": "Cookies.co", "menu": "https://cookies.co/pages/store-locator"},
+    "TruMed":               {"addr": "1240 E McDowell Rd, Phoenix, AZ 85006", "platform": "TruMed", "menu": "https://trumedaz.com/menu/"},
+    "Sunday Goods":         {"addr": "15440 N Greenway Hayden Loop, Scottsdale, AZ 85260", "platform": "Dutchie", "menu": "https://dutchie.com/dispensary/sunday-goods-scottsdale"},
+    "Nirvana Center":       {"addr": "10654 N 32nd St, Phoenix, AZ 85028", "platform": "Leafly", "menu": "https://www.leafly.com/dispensary-info/nirvana-center"},
+    "Story Cannabis":       {"addr": "7200 E 2nd St, Scottsdale, AZ 85251", "platform": "Dutchie", "menu": "https://dutchie.com/dispensary/story-cannabis-scottsdale"},
+    "Local Joint":          {"addr": "10617 N Hayden Rd, Scottsdale, AZ 85260", "platform": "Weedmaps", "menu": "https://weedmaps.com/dispensaries/local-joint-scottsdale"},
+    "Curaleaf":             {"addr": "1525 W Camelback Rd, Phoenix, AZ 85015", "platform": "Curaleaf", "menu": "https://curaleaf.com/shop/arizona/curaleaf-az-camelback"},
+}
+
+# ---------------------------------------------------------------------------
+# Saved locations (window.TS_LOCATIONS)
+# ---------------------------------------------------------------------------
+TS_LOCATIONS = [
+    {"id": "oldtown", "label": "Old Town", "sub": "85251", "icon": "🏠"},
+    {"id": "north", "label": "N. Scottsdale", "sub": "85255", "icon": "📍"},
+    {"id": "tempe", "label": "Downtown Tempe", "sub": "85281", "icon": "📍"},
+    {"id": "phx", "label": "Midtown Phoenix", "sub": "85015", "icon": "📍"},
+    {"id": "nphx", "label": "North Phoenix", "sub": "85050", "icon": "📍"},
+]
+
+# ---------------------------------------------------------------------------
+# Straight-line miles matrix (window.TS_DIST)
+# ---------------------------------------------------------------------------
+TS_DIST = {
+    "oldtown": {"Sol Flower": 2.3, "The Mint": 4.1, "Cookies on Camelback": 5.8, "TruMed": 6.4, "Sunday Goods": 3.0, "Nirvana Center": 3.9, "Story Cannabis": 2.8, "Local Joint": 5.1, "Curaleaf": 6.0},
+    "north":   {"Sol Flower": 3.4, "The Mint": 9.6, "Cookies on Camelback": 9.1, "TruMed": 9.7, "Sunday Goods": 1.5, "Nirvana Center": 5.6, "Story Cannabis": 7.4, "Local Joint": 1.8, "Curaleaf": 9.3},
+    "tempe":   {"Sol Flower": 6.5, "The Mint": 1.2, "Cookies on Camelback": 6.5, "TruMed": 5.5, "Sunday Goods": 8.6, "Nirvana Center": 5.9, "Story Cannabis": 5.0, "Local Joint": 9.1, "Curaleaf": 6.8},
+    "phx":     {"Sol Flower": 7.0, "The Mint": 7.5, "Cookies on Camelback": 1.5, "TruMed": 2.5, "Sunday Goods": 9.6, "Nirvana Center": 6.8, "Story Cannabis": 6.5, "Local Joint": 9.8, "Curaleaf": 1.8},
+}

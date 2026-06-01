@@ -1,0 +1,82 @@
+{
+  "took": 7,
+  "timed_out": false,
+  "hits": {
+    "total": { "value": 4, "relation": "eq" },
+    "hits": [
+      {
+        "_source": {
+          "jointId": "b1a183b4-flower",
+          "businessId": 5797,
+          "name": "Atomic Apple Flower",
+          "nameText": "Atomic Apple Flower",
+          "category": "FLOWER",
+          "subCategory": "DEFAULT",
+          "description": "Loud, gassy indica-leaning hybrid.",
+          "effects": ["HAPPY", "RELAXED", "SLEEPY"],
+          "primaryImage": "https://images.dutchie.com/atomic-apple",
+          "images": ["https://images.dutchie.com/atomic-apple"],
+          "menuType": ["MEDICAL", "RECREATIONAL"],
+          "strainType": "INDICA",
+          "urlFragment": "atomic-apple-flower",
+          "brandName": "Alien Labs",
+          "potencyThcDisplayValue": "31.40%",
+          "potencyThcRangeHigh": "31.40",
+          "potencyCbdDisplayValue": null,
+          "potencyCbdRangeHigh": "0.10",
+          "variants": [
+            { "option": "3.5g", "price": "60.00", "specialPrice": "38.00", "menuType": "MEDICAL" },
+            { "option": "3.5g", "price": "60.00", "specialPrice": "38.00", "menuType": "RECREATIONAL" },
+            { "option": "1/2oz", "price": "200.00", "specialPrice": null, "menuType": "RECREATIONAL" }
+          ]
+        }
+      },
+      {
+        "_source": {
+          "jointId": "c2-edible",
+          "businessId": 5797,
+          "name": "Watermelon Live Rosin Gummies",
+          "category": "EDIBLES",
+          "description": "Live rosin gummies.",
+          "effects": ["EUPHORIC"],
+          "primaryImage": "https://images.dutchie.com/wm-gummies",
+          "menuType": ["RECREATIONAL"],
+          "strainType": "HYBRID",
+          "brandName": "CAM",
+          "potencyThcDisplayValue": "100mg",
+          "variants": [
+            { "option": "100mg", "price": "30.00", "specialPrice": "10.00", "menuType": "RECREATIONAL" }
+          ]
+        }
+      },
+      {
+        "_source": {
+          "jointId": "d3-vape",
+          "businessId": 5797,
+          "name": "Black Amber Live Rosin AIO",
+          "category": "VAPORIZERS",
+          "menuType": ["RECREATIONAL"],
+          "strainType": "SATIVA",
+          "brandName": "Timeless",
+          "potencyThcRangeHigh": "78.00",
+          "variants": [
+            { "option": "0.5g", "price": "60.00", "specialPrice": null, "menuType": "RECREATIONAL" }
+          ]
+        }
+      },
+      {
+        "_source": {
+          "jointId": "e4-tincture",
+          "businessId": 5797,
+          "name": "1:1 Wellness Tincture",
+          "category": "TINCTURES",
+          "menuType": ["RECREATIONAL"],
+          "brandName": "Some Brand",
+          "variants": [
+            { "option": "30ml", "price": "40.00", "specialPrice": null, "menuType": "RECREATIONAL" }
+          ]
+        }
+      }
+    ]
+  }
+}

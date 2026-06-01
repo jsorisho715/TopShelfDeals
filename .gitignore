@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Local data / secrets
+.env
+data/*.db
+data/*.db-*
+data/*.sqlite
+data/*.sqlite-*
+data/cache/
+data/geocode_cache.json

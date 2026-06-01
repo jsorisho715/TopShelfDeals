@@ -1,0 +1,66 @@
+{
+  "data": {
+    "filteredProducts": {
+      "queryRelevantProducts": [],
+      "products": [
+        {
+          "id": "63f1a9c0e2b4a10012ab0001",
+          "Name": "Blue Burst Live Resin Disposable",
+          "brand": { "id": "br-stiiizy", "name": "STIIIZY" },
+          "type": "Vaporizers",
+          "subcategory": "Disposable",
+          "strainType": "Hybrid",
+          "Prices": [40],
+          "specialPrices": [30],
+          "Options": ["1g"],
+          "THCContent": { "range": [85.4, 87.1], "unit": "PERCENTAGE" },
+          "CBDContent": { "range": [0.0, 0.1], "unit": "PERCENTAGE" },
+          "Image": "https://images.dutchie.com/stiiizy-blue-burst-1g.jpg",
+          "images": [
+            { "url": "https://images.dutchie.com/stiiizy-blue-burst-1g.jpg" }
+          ],
+          "special": true,
+          "inStock": true
+        },
+        {
+          "id": "63f1a9c0e2b4a10012ab0002",
+          "Name": "Baby Jeeter Infused Maui Wowie 5-Pack",
+          "brand": { "id": "br-jeeter", "name": "Baby Jeeter" },
+          "type": "Pre-Rolls",
+          "subcategory": "Infused",
+          "strainType": "Sativa",
+          "Prices": [35],
+          "specialPrices": [22],
+          "Options": ["2.5g"],
+          "THCContent": { "range": [38.0, 41.2], "unit": "PERCENTAGE" },
+          "CBDContent": { "range": [0.0, 0.2], "unit": "PERCENTAGE" },
+          "Image": "https://images.dutchie.com/jeeter-maui-wowie-5pack.jpg",
+          "images": [
+            { "url": "https://images.dutchie.com/jeeter-maui-wowie-5pack.jpg" }
+          ],
+          "special": true,
+          "inStock": true
+        },
+        {
+          "id": "63f1a9c0e2b4a10012ab0003",
+          "Name": "House Blend Popcorn Flower 7g",
+          "brand": { "id": "br-generic", "name": "Generic Greenhouse Co" },
+          "type": "Flower",
+          "subcategory": "Bulk",
+          "strainType": "Indica",
+          "Prices": [45],
+          "specialPrices": [],
+          "Options": ["7g"],
+          "THCContent": { "range": [18.0, 19.5], "unit": "PERCENTAGE" },
+          "CBDContent": { "range": [0.0, 0.1], "unit": "PERCENTAGE" },
+          "Image": "https://images.dutchie.com/house-popcorn-7g.jpg",
+          "images": [
+            { "url": "https://images.dutchie.com/house-popcorn-7g.jpg" }
+          ],
+          "special": false,
+          "inStock": true
+        }
+      ]
+    }
+  }
+}

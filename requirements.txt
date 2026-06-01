@@ -1,0 +1,26 @@
+# Core
+httpx==0.28.1
+python-dotenv==1.0.1
+
+# Scraping fallback (JS-gated / Cloudflare pages)
+playwright==1.49.1
+
+# Scheduling (America/Phoenix, no DST)
+APScheduler==3.11.0
+tzdata==2025.1
+
+# Telegram bot (long-polling)
+python-telegram-bot==21.10
+
+# Web dashboard (M3)
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+jinja2==3.1.5
+
+# Desktop tray launcher (Windows system-tray app + icon + process mgmt)
+pystray==0.19.5
+Pillow==11.1.0
+psutil==6.1.1
+
+# Dev / tests
+pytest==8.3.4

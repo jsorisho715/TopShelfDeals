@@ -1,0 +1,1101 @@
+{
+  "data": {
+    "getPersonalizedProducts": {
+      "products": [
+        {
+          "_id": "69cf66a053918df0973fc4ff",
+          "id": "69cf66a053918df0973fc4ff",
+          "AdditionalOptions": [],
+          "duplicatedProductId": null,
+          "libraryProductId": null,
+          "libraryProductScore": null,
+          "brand": {
+            "id": "26da2cd5-87df-4b75-95cf-71b41dbb298c",
+            "name": "MC",
+            "parentBrandId": null,
+            "imageUrl": null,
+            "__typename": "Brand"
+          },
+          "brandId": "26da2cd5-87df-4b75-95cf-71b41dbb298c",
+          "brandName": "MC",
+          "CBD": null,
+          "CBDContent": {
+            "unit": "PERCENTAGE",
+            "range": [
+              2.41
+            ],
+            "__typename": "ProductPotency"
+          },
+          "certificateOfAnalysisEnabled": false,
+          "collectionCardBadge": null,
+          "comingSoon": null,
+          "createdAt": "1775199904887",
+          "updatedAt": "2026-05-31T18:47:25.957Z",
+          "DispensaryID": "se4ekt2e7rH5pspyn",
+          "enterpriseProductId": "69ceff2409464a00074e5483",
+          "Image": "https://s3-us-west-2.amazonaws.com/dutchie-images/81132525b1bcff6c5020548966a70636",
+          "images": [
+            {
+              "url": "https://s3-us-west-2.amazonaws.com/dutchie-images/81132525b1bcff6c5020548966a70636",
+              "description": null,
+              "active": true,
+              "__typename": "Products_Images"
+            }
+          ],
+          "measurements": {
+            "netWeight": {
+              "unit": "MILLIGRAMS",
+              "values": [
+                1000
+              ],
+              "__typename": "Products_measurement"
+            },
+            "volume": null,
+            "__typename": "Products_measurements"
+          },
+          "medicalOnly": false,
+          "medicalPrices": [
+            30
+          ],
+          "medicalSpecialPrices": [],
+          "wholesalePrices": null,
+          "Name": "MC Enjoymint - AIO Distillate - Maui Wowie (S) (1.0g)",
+          "nonArmsLength": null,
+          "Options": [
+            "1g"
+          ],
+          "limitsPerCustomer": null,
+          "manualInventory": null,
+          "POSMetaData": {
+            "activeBatchTags": [],
+            "canonicalBrandId": "63438",
+            "canonicalBrandName": "MC",
+            "canonicalCategory": "Disposables: Distillate",
+            "canonicalCategoryId": "23443",
+            "canonicalID": "13810894",
+            "canonicalPackageId": "2625805",
+            "canonicalImgUrl": "https://leaflogixmedia.blob.core.windows.net/product-image/89ac6cf1-4275-4081-b26b-2dff60ea9d74.jpg",
+            "canonicalLabResultUrl": "https://rebrand.ly/7c83a9",
+            "canonicalName": "MC Enjoymint - AIO Distillate - Maui Wowie (S) (1.0g)",
+            "canonicalProductTags": [],
+            "canonicalSKU": "68979112",
+            "canonicalStrainId": "472125",
+            "canonicalVendorId": null,
+            "children": [
+              {
+                "activeBatchTags": [],
+                "canonicalBrandId": "63438",
+                "canonicalBrandName": null,
+                "canonicalCategory": "Disposables: Distillate",
+                "canonicalCategoryId": "23443",
+                "canonicalEffectivePotencyMg": 963.9,
+                "canonicalID": "13810894",
+                "canonicalPackageId": "2625805",
+                "canonicalImgUrl": "https://leaflogixmedia.blob.core.windows.net/product-image/89ac6cf1-4275-4081-b26b-2dff60ea9d74.jpg",
+                "canonicalLabResultUrl": null,
+                "canonicalName": "MC Enjoymint - AIO Distillate - Maui Wowie (S) (1.0g)",
+                "canonicalSKU": "68979112",
+                "canonicalProductTags": [],
+                "canonicalStrainId": "472125",
+                "canonicalVendorId": null,
+                "kioskQuantityAvailable": 25,
+                "medPrice": null,
+                "option": "1g",
+                "packageQuantity": null,
+                "price": 30,
+                "quantity": 25,
+                "quantityAvailable": 25,
+                "recEquivalent": null,
+                "recPrice": 30,
+                "standardEquivalent": null,
+                "__typename": "Products_POSMetaData_children"
+              }
+            ],
+            "integrationID": "61eafbf414b193007d49e614",
+            "__typename": "Products_POSMetaData"
+          },
+          "Prices": [
+            30
+          ],
+          "pricingTierData": null,
+          "specialIdsPerOption": [
+            {
+              "option": "1g",
+              "conditionIds": [
+                "69fe60ee7ed3f700076c940e"
+              ],
+              "rewardIds": [
+                "69fe60ee7ed3f700076c940e"
+              ],
+              "__typename": "Products_specialIdsPerOption"
+            }
+          ],
+          "rawOptions": [
+            "1.0g"
+          ],
+          "recOnly": false,
+          "recPrices": [
+            30
+          ],
+          "recSpecialPrices": [
+            17
+          ],
+          "special": true,
+          "specialData": {
+            "bogoSpecials": [
+              {
+                "applyRewardsToConditions": true,
+                "excludeConditionItemsFromRewards": null,
+                "bogoConditionLogicOperator": "and",
+                "bogoConditions": [
+                  {
+                    "_id": "6a1cc545cfc88f000713f9aa",
+                    "brandId": null,
+                    "brandIds": [
+                      "63438",
+                      "63958"
+                    ],
+                    "brandName": null,
+                    "brandNames": null,
+                    "categoryIds": [
+                      "23443"
+                    ],
+                    "categoryName": null,
+                    "categoryNames": null,
+                    "enterpriseProductId": null,
+                    "enterpriseProductIds": null,
+                    "exclusions": null,
+                    "inventoryTags": null,
+                    "productGroup": "categories",
+                    "productId": null,
+                    "productIds": null,
+                    "productTags": null,
+                    "quantity": null,
+                    "requiresSingleSku": false,
+                    "selectedCategoriesAndSubcategories": null,
+                    "strainIds": null,
+                    "subcategoryIds": null,
+                    "subcategoryNames": null,
+                    "vendorIds": null,
+                    "totalQuantity": {
+                      "enabled": true,
+                      "maxQuantity": null,
+                      "quantity": 5,
+                      "quantityOperator": "greaterThanEqualTo",
+                      "__typename": "TotalQuantity"
+                    },
+                    "totalWeight": null,
+                    "totalSpend": null,
+                    "weight": null,
+                    "weights": [
+                      "1.0g"
+                    ],
+                    "weightOperator": "equalTo",
+                    "__typename": "Products_specialData_bogoSpecials_bogoConditionItem"
+                  }
+                ],
+                "bogoRewardLogicOperator": "and",
+                "bogoRewards": [
+                  {
+                    "_id": "6a1cc545cfc88f000713f9ac",
+                    "applicationRules": null,
+                    "brandId": null,
+                    "brandIds": null,
+                    "brandName": null,
+                    "brandNames": null,
+                    "categoryIds": null,
+                    "categoryName": null,
+                    "categoryNames": null,
+                    "discountAmount": 75,
+                    "discountType": "targetPrice",
+                    "dollarDiscount": null,
+                    "enterpriseProductId": null,
+                    "enterpriseProductIds": null,
+                    "exclusions": null,
+                    "inventoryTags": null,
+                    "productGroup": null,
+                    "productId": null,
+                    "productIds": null,
+                    "percentDiscount": null,
+                    "productTags": null,
+                    "quantity": null,
+                    "requiresSingleSku": false,
+                    "selectedCategoriesAndSubcategories": null,
+                    "strainIds": null,
+                    "subcategoryIds": null,
+                    "subcategoryNames": null,
+                    "vendorIds": null,
+                    "targetPrice": null,
+                    "totalQuantity": null,
+                    "totalWeight": null,
+                    "totalSpend": null,
+                    "weight": null,
+                    "weights": null,
+                    "weightOperator": null,
+                    "__typename": "Products_specialData_bogoSpecials_bogoRewardItem"
+                  }
+                ],
+                "createdBy": "ArmageddonDiscountSync",
+                "directPOSProductIdMapping": true,
+                "rawPOSWeightMapping": true,
+                "useLatestCartCalculator": null,
+                "discountBundle": {
+                  "_id": "6a1cc545cfc88f000713f9a9",
+                  "applyTo": "ALL",
+                  "discountType": "targetPrice",
+                  "enabled": true,
+                  "limit": null,
+                  "value": "75",
+                  "__typename": "Products_specialData_bogoSpecials_discountBundle"
+                },
+                "discountToCart": null,
+                "discountBehavior": null,
+                "discountStacking": false,
+                "discountPrecedence": "lowToHigh",
+                "endStamp": "1782889200000",
+                "excludedProducts": {
+                  "conditions": null,
+                  "rewards": null,
+                  "__typename": "ExcludedBOGOProducts"
+                },
+                "isRecurring": null,
+                "itemsForAPrice": null,
+                "menuDisplayName": null,
+                "menuType": "recreational",
+                "minorVersion": 0,
+                "nonStackingBehavior": "favorCustomer",
+                "payByBankIncentiveEnabled": null,
+                "paymentRestrictions": null,
+                "recurringEndDate": null,
+                "redemptionLimit": null,
+                "settingsDerivedFrom": "special",
+                "skipV4Merge": null,
+                "specialId": "69fe60ee7ed3f700076c940e",
+                "specialName": "5 for $75 Mint Cannabis - Enjoymint AIO Distillate 1g",
+                "specialType": "bogo",
+                "stackingBehavior": "compounding",
+                "stackingMode": "non-stacking",
+                "sourceId": "382065",
+                "totalQuantity": {
+                  "enabled": false,
+                  "maxQuantity": null,
+                  "quantity": null,
+                  "quantityOperator": null,
+                  "__typename": "TotalQuantity"
+                },
+                "totalWeight": {
+                  "enabled": false,
+                  "weight": null,
+                  "weightOperator": null,
+                  "__typename": "TotalWeight"
+                },
+                "totalSpend": {
+                  "enabled": false,
+                  "maximumSpend": null,
+                  "minimumSpend": null,
+                  "spendOperator": null,
+                  "__typename": "TotalSpend"
+                },
+                "useGreedOptimizedCalculator": null,
+                "useTotalQtyCalcsFix": null,
+                "version": 3,
+                "qualifyingOptions": [
+                  "1g"
+                ],
+                "qualifyingConditionOptions": [
+                  "1g"
+                ],
+                "qualifyingRewardOptions": [
+                  "1g"
+                ],
+                "__typename": "Products_specialData_bogoSpecials"
+              }
+            ],
+            "saleSpecials": [
+              {
+                "createdBy": "ArmageddonDiscountSync",
+                "directPOSProductIdMapping": true,
+                "rawPOSWeightMapping": true,
+                "useLatestCartCalculator": null,
+                "discount": 17,
+                "discountStacking": false,
+                "dollarDiscount": false,
+                "eligibleProductOptions": [
+                  "1g"
+                ],
+                "menuType": "recreational",
+                "minorVersion": 0,
+                "nonStackingBehavior": "favorCustomer",
+                "payByBankIncentiveEnabled": null,
+                "paymentRestrictions": null,
+                "percentDiscount": false,
+                "saleDiscounts": [
+                  {
+                    "_id": "6a1cc545cfc88f000713f98a",
+                    "brandIds": [
+                      "63438",
+                      "63958"
+                    ],
+                    "brandNames": null,
+                    "categoryIds": [
+                      "23443"
+                    ],
+                    "categoryNames": null,
+                    "discountAmount": 17,
+                    "discountType": "targetPrice",
+                    "enterpriseProductIds": null,
+                    "exclusions": null,
+                    "inventoryTags": null,
+                    "productGroup": "categories",
+                    "productIds": null,
+                    "productTags": null,
+                    "strainIds": null,
+                    "subcategoryIds": null,
+                    "subcategoryNames": null,
+                    "vendorIds": null,
+                    "weights": [
+                      "1.0g"
+                    ],
+                    "weightOperator": "equalTo",
+                    "__typename": "SaleDiscount"
+                  }
+                ],
+                "settingsDerivedFrom": "special",
+                "skipV4Merge": null,
+                "source": "POS",
+                "sourceId": "381667",
+                "specialId": "69f4cd6b464b4500075ab639",
+                "specialName": "$17 Mint Cannabis - Enjoymint AIO Distillate 1g",
+                "specialType": "sale",
+                "specialRestrictions": {},
+                "stackingBehavior": "compounding",
+                "stackingMode": "non-stacking",
+                "targetPrice": true,
+                "useGreedOptimizedCalculator": null,
+                "useTotalQtyCalcsFix": null,
+                "version": 3,
+                "__typename": "Products_specialData_saleSpecials"
+              }
+            ],
+            "__typename": "Products_specialData"
+          },
+          "Status": "Active",
+          "strainType": "Sativa",
+          "subcategory": "disposables",
+          "subcategories": null,
+          "THC": null,
+          "THCContent": {
+            "unit": "PERCENTAGE",
+            "range": [
+              96.39
+            ],
+            "__typename": "ProductPotency"
+          },
+          "totalTerpenes": null,
+          "type": "Vaporizers",
+          "vapeTaxApplicable": null,
+          "weight": 1000,
+          "featured": null,
+          "isBelowThreshold": false,
+          "isBelowKioskThreshold": false,
+          "optionsBelowThreshold": [],
+          "optionsBelowKioskThreshold": [],
+          "cName": "mc-enjoymint-aio-distillate-maui-wowie-s-1-0g",
+          "pastCNames": [
+            "mc-enjoymint-aio-distillate-maui-wowie-s-1-0g"
+          ],
+          "brandLogo": null,
+          "bottleDepositTaxCents": null,
+          "useBetterPotencyTaxes": null,
+          "__typename": "Products",
+          "provider": "dutchie"
+        },
+        {
+          "_id": "684e08bc9361efbb44cac251",
+          "id": "684e08bc9361efbb44cac251",
+          "AdditionalOptions": [],
+          "duplicatedProductId": null,
+          "libraryProductId": null,
+          "libraryProductScore": null,
+          "brand": {
+            "id": "26da2cd5-87df-4b75-95cf-71b41dbb298c",
+            "name": "MC",
+            "parentBrandId": null,
+            "imageUrl": null,
+            "__typename": "Brand"
+          },
+          "brandId": "26da2cd5-87df-4b75-95cf-71b41dbb298c",
+          "brandName": "MC",
+          "CBD": null,
+          "CBDContent": null,
+          "certificateOfAnalysisEnabled": false,
+          "collectionCardBadge": null,
+          "comingSoon": null,
+          "createdAt": "1749944508963",
+          "updatedAt": "2026-05-31T23:08:49.234Z",
+          "DispensaryID": "se4ekt2e7rH5pspyn",
+          "enterpriseProductId": "684ca269e506b60007c35108",
+          "Image": "https://s3-us-west-2.amazonaws.com/dutchie-images/flower-stock-14-v1.jpg",
+          "images": null,
+          "measurements": {
+            "netWeight": {
+              "unit": "MILLIGRAMS",
+              "values": [
+                14000
+              ],
+              "__typename": "Products_measurement"
+            },
+            "volume": null,
+            "__typename": "Products_measurements"
+          },
+          "medicalOnly": false,
+          "medicalPrices": [
+            39
+          ],
+          "medicalSpecialPrices": [],
+          "wholesalePrices": null,
+          "Name": "SG - Flower - T3 - Sour Dubs (S) (14.0g)",
+          "nonArmsLength": null,
+          "Options": [
+            "1/2oz"
+          ],
+          "limitsPerCustomer": null,
+          "manualInventory": null,
+          "POSMetaData": {
+            "activeBatchTags": [],
+            "canonicalBrandId": "63438",
+            "canonicalBrandName": "MC",
+            "canonicalCategory": "Mint Flower",
+            "canonicalCategoryId": "39942",
+            "canonicalID": "13784531",
+            "canonicalPackageId": "2627483",
+            "canonicalImgUrl": null,
+            "canonicalLabResultUrl": "https://rebrand.ly/MintCOASearch",
+            "canonicalName": "SG - Flower - T3 - Sour Dubs (S) (14.0g)",
+            "canonicalProductTags": [],
+            "canonicalSKU": "12581737",
+            "canonicalStrainId": "595222",
+            "canonicalVendorId": "60117",
+            "children": [
+              {
+                "activeBatchTags": [],
+                "canonicalBrandId": "63438",
+                "canonicalBrandName": null,
+                "canonicalCategory": "Mint Flower",
+                "canonicalCategoryId": "39942",
+                "canonicalEffectivePotencyMg": 2462.6,
+                "canonicalID": "13784531",
+                "canonicalPackageId": "2627483",
+                "canonicalImgUrl": null,
+                "canonicalLabResultUrl": null,
+                "canonicalName": "SG - Flower - T3 - Sour Dubs (S) (14.0g)",
+                "canonicalSKU": "12581737",
+                "canonicalProductTags": [],
+                "canonicalStrainId": "595222",
+                "canonicalVendorId": "60117",
+                "kioskQuantityAvailable": 25,
+                "medPrice": null,
+                "option": "1/2oz",
+                "packageQuantity": null,
+                "price": 39,
+                "quantity": 25,
+                "quantityAvailable": 25,
+                "recEquivalent": null,
+                "recPrice": 39,
+                "standardEquivalent": null,
+                "__typename": "Products_POSMetaData_children"
+              }
+            ],
+            "integrationID": "61eafbf414b193007d49e614",
+            "__typename": "Products_POSMetaData"
+          },
+          "Prices": [
+            39
+          ],
+          "pricingTierData": null,
+          "specialIdsPerOption": [
+            {
+              "option": "1/2oz",
+              "conditionIds": [
+                "69ea7c7e711cf10007e6c685"
+              ],
+              "rewardIds": [
+                "69ea7c7e711cf10007e6c685"
+              ],
+              "__typename": "Products_specialIdsPerOption"
+            }
+          ],
+          "rawOptions": [
+            "14.0g"
+          ],
+          "recOnly": false,
+          "recPrices": [
+            39
+          ],
+          "recSpecialPrices": [],
+          "special": null,
+          "specialData": {
+            "bogoSpecials": [
+              {
+                "applyRewardsToConditions": true,
+                "excludeConditionItemsFromRewards": null,
+                "bogoConditionLogicOperator": "and",
+                "bogoConditions": [
+                  {
+                    "_id": "6a1cc545cfc88f000713f9d0",
+                    "brandId": null,
+                    "brandIds": null,
+                    "brandName": null,
+                    "brandNames": null,
+                    "categoryIds": [
+                      "39942"
+                    ],
+                    "categoryName": null,
+                    "categoryNames": null,
+                    "enterpriseProductId": null,
+                    "enterpriseProductIds": null,
+                    "exclusions": null,
+                    "inventoryTags": null,
+                    "productGroup": "categories",
+                    "productId": null,
+                    "productIds": [
+                      "11918281",
+                      "13698645",
+                      "13700194",
+                      "13707705",
+                      "13710260",
+                      "13713814",
+                      "13715871",
+                      "13715875",
+                      "13715923",
+                      "13720250",
+                      "13720251",
+                      "13725084",
+                      "13725100",
+                      "13729770",
+                      "13733337",
+                      "13733572",
+                      "13733697",
+                      "13769514",
+                      "13771604",
+                      "13771806",
+                      "13772967",
+                      "13772969",
+                      "13772970",
+                      "13772973",
+                      "13776264",
+                      "13776269",
+                      "13778374",
+                      "13780506",
+                      "13780901",
+                      "13780976",
+                      "13781728",
+                      "13782008",
+                      "13782066",
+                      "13782068",
+                      "13782429",
+                      "13782808",
+                      "13783568",
+                      "13784262",
+                      "13784531",
+                      "13785640",
+                      "13786429",
+                      "13786768",
+                      "13786773",
+                      "13789299",
+                      "13789309",
+                      "13789369",
+                      "13789532",
+                      "13789718",
+                      "13790999",
+                      "13791925",
+                      "13792900",
+                      "13793871",
+                      "13793936",
+                      "13794003",
+                      "13794778",
+                      "13794789",
+                      "13794796",
+                      "13795219",
+                      "13795814",
+                      "13796017",
+                      "13796479",
+                      "13797109",
+                      "13797111",
+                      "13797135",
+                      "13797398",
+                      "13797538",
+                      "13797623",
+                      "13797627",
+                      "13797764",
+                      "13797774",
+                      "13797841",
+                      "13797882",
+                      "13798114",
+                      "13798156",
+                      "13798189",
+                      "13798368",
+                      "13798371",
+                      "13799454",
+                      "13799565",
+                      "13799665",
+                      "13799970",
+                      "13801019",
+                      "13801845",
+                      "13803393",
+                      "13803394",
+                      "13803647",
+                      "13803858",
+                      "13804093",
+                      "13804126",
+                      "13804127",
+                      "13805702",
+                      "13806282",
+                      "13808376",
+                      "13809396",
+                      "13809404",
+                      "13809419",
+                      "13809713",
+                      "13809798",
+                      "13810396",
+                      "13810533",
+                      "13810578",
+                      "13810588",
+                      "13810596",
+                      "13810598",
+                      "13811545",
+                      "13811594",
+                      "13811842",
+                      "13812095",
+                      "13812099",
+                      "13812325",
+                      "13812488",
+                      "13812536",
+                      "13812727",
+                      "13812773",
+                      "13812849",
+                      "13812974",
+                      "13812978",
+                      "13812985",
+                      "13813172",
+                      "13813177",
+                      "13813333",
+                      "13813771",
+                      "13813942",
+                      "13814879",
+                      "13815246",
+                      "13815464",
+                      "13815700"
+                    ],
+                    "productTags": null,
+                    "quantity": null,
+                    "requiresSingleSku": false,
+                    "selectedCategoriesAndSubcategories": null,
+                    "strainIds": null,
+                    "subcategoryIds": null,
+                    "subcategoryNames": null,
+                    "vendorIds": null,
+                    "totalQuantity": {
+                      "enabled": true,
+                      "maxQuantity": null,
+                      "quantity": 2,
+                      "quantityOperator": "greaterThanEqualTo",
+                      "__typename": "TotalQuantity"
+                    },
+                    "totalWeight": null,
+                    "totalSpend": null,
+                    "weight": null,
+                    "weights": [
+                      "14.0g"
+                    ],
+                    "weightOperator": "equalTo",
+                    "__typename": "Products_specialData_bogoSpecials_bogoConditionItem"
+                  }
+                ],
+                "bogoRewardLogicOperator": "and",
+                "bogoRewards": [
+                  {
+                    "_id": "6a1cc545cfc88f000713f9d2",
+                    "applicationRules": null,
+                    "brandId": null,
+                    "brandIds": null,
+                    "brandName": null,
+                    "brandNames": null,
+                    "categoryIds": null,
+                    "categoryName": null,
+                    "categoryNames": null,
+                    "discountAmount": 69,
+                    "discountType": "targetPrice",
+                    "dollarDiscount": null,
+                    "enterpriseProductId": null,
+                    "enterpriseProductIds": null,
+                    "exclusions": null,
+                    "inventoryTags": null,
+                    "productGroup": null,
+                    "productId": null,
+                    "productIds": null,
+                    "percentDiscount": null,
+                    "productTags": null,
+                    "quantity": null,
+                    "requiresSingleSku": false,
+                    "selectedCategoriesAndSubcategories": null,
+                    "strainIds": null,
+                    "subcategoryIds": null,
+                    "subcategoryNames": null,
+                    "vendorIds": null,
+                    "targetPrice": null,
+                    "totalQuantity": null,
+                    "totalWeight": null,
+                    "totalSpend": null,
+                    "weight": null,
+                    "weights": null,
+                    "weightOperator": null,
+                    "__typename": "Products_specialData_bogoSpecials_bogoRewardItem"
+                  }
+                ],
+                "createdBy": "ArmageddonDiscountSync",
+                "directPOSProductIdMapping": true,
+                "rawPOSWeightMapping": true,
+                "useLatestCartCalculator": null,
+                "discountBundle": {
+                  "_id": "6a1cc545cfc88f000713f9cf",
+                  "applyTo": "ALL",
+                  "discountType": "targetPrice",
+                  "enabled": true,
+                  "limit": null,
+                  "value": "69",
+                  "__typename": "Products_specialData_bogoSpecials_discountBundle"
+                },
+                "discountToCart": null,
+                "discountBehavior": null,
+                "discountStacking": false,
+                "discountPrecedence": "lowToHigh",
+                "endStamp": "1782889200000",
+                "excludedProducts": {
+                  "conditions": null,
+                  "rewards": null,
+                  "__typename": "ExcludedBOGOProducts"
+                },
+                "isRecurring": null,
+                "itemsForAPrice": null,
+                "menuDisplayName": null,
+                "menuType": "recreational",
+                "minorVersion": 0,
+                "nonStackingBehavior": "favorCustomer",
+                "payByBankIncentiveEnabled": null,
+                "paymentRestrictions": null,
+                "recurringEndDate": null,
+                "redemptionLimit": null,
+                "settingsDerivedFrom": "special",
+                "skipV4Merge": null,
+                "specialId": "69ea7c7e711cf10007e6c685",
+                "specialName": "2 for $69 MC - Flower - T3 14g",
+                "specialType": "bogo",
+                "stackingBehavior": "compounding",
+                "stackingMode": "non-stacking",
+                "sourceId": "381318",
+                "totalQuantity": {
+                  "enabled": false,
+                  "maxQuantity": null,
+                  "quantity": null,
+                  "quantityOperator": null,
+                  "__typename": "TotalQuantity"
+                },
+                "totalWeight": {
+                  "enabled": false,
+                  "weight": null,
+                  "weightOperator": null,
+                  "__typename": "TotalWeight"
+                },
+                "totalSpend": {
+                  "enabled": false,
+                  "maximumSpend": null,
+                  "minimumSpend": null,
+                  "spendOperator": null,
+                  "__typename": "TotalSpend"
+                },
+                "useGreedOptimizedCalculator": null,
+                "useTotalQtyCalcsFix": null,
+                "version": 3,
+                "qualifyingOptions": [
+                  "1/2oz"
+                ],
+                "qualifyingConditionOptions": [
+                  "1/2oz"
+                ],
+                "qualifyingRewardOptions": [
+                  "1/2oz"
+                ],
+                "__typename": "Products_specialData_bogoSpecials"
+              }
+            ],
+            "saleSpecials": null,
+            "__typename": "Products_specialData"
+          },
+          "Status": "Active",
+          "strainType": "Sativa",
+          "subcategory": "shake-trim",
+          "subcategories": null,
+          "THC": null,
+          "THCContent": {
+            "unit": "PERCENTAGE",
+            "range": [
+              17.59
+            ],
+            "__typename": "ProductPotency"
+          },
+          "totalTerpenes": null,
+          "type": "Flower",
+          "vapeTaxApplicable": null,
+          "weight": 1000,
+          "featured": null,
+          "isBelowThreshold": false,
+          "isBelowKioskThreshold": false,
+          "optionsBelowThreshold": [],
+          "optionsBelowKioskThreshold": [],
+          "cName": "sg-flower-t3-sour-dubs-s-14-0g",
+          "pastCNames": [
+            "sg-flower-t3-sour-dubs-s-14-0g"
+          ],
+          "brandLogo": null,
+          "bottleDepositTaxCents": null,
+          "useBetterPotencyTaxes": null,
+          "__typename": "Products",
+          "provider": "dutchie"
+        },
+        {
+          "_id": "68429783a96118df5d254c1c",
+          "id": "68429783a96118df5d254c1c",
+          "AdditionalOptions": [],
+          "duplicatedProductId": null,
+          "libraryProductId": null,
+          "libraryProductScore": null,
+          "brand": {
+            "id": "9d18c315-a9c9-4add-a192-87877e9d2928",
+            "name": "Dime Industries",
+            "parentBrandId": null,
+            "imageUrl": "https://s3-us-west-2.amazonaws.com/dutchie-images/03efb5383e9bff7d2cdbe1eda2e9fb98",
+            "__typename": "Brand"
+          },
+          "brandId": "9d18c315-a9c9-4add-a192-87877e9d2928",
+          "brandName": "Dime Industries",
+          "CBD": null,
+          "CBDContent": {
+            "unit": "PERCENTAGE",
+            "range": [
+              0.21
+            ],
+            "__typename": "ProductPotency"
+          },
+          "certificateOfAnalysisEnabled": false,
+          "collectionCardBadge": null,
+          "comingSoon": null,
+          "createdAt": "1749194627112",
+          "updatedAt": "2026-05-31T05:31:51.513Z",
+          "DispensaryID": "se4ekt2e7rH5pspyn",
+          "enterpriseProductId": "684296943a1f480007f361bd",
+          "Image": "https://s3-us-west-2.amazonaws.com/dutchie-images/64f4adbf3242c978bff1c8dbb60a25dc",
+          "images": [
+            {
+              "url": "https://s3-us-west-2.amazonaws.com/dutchie-images/64f4adbf3242c978bff1c8dbb60a25dc",
+              "description": null,
+              "active": true,
+              "__typename": "Products_Images"
+            }
+          ],
+          "measurements": {
+            "netWeight": {
+              "unit": "MILLIGRAMS",
+              "values": [
+                2000
+              ],
+              "__typename": "Products_measurement"
+            },
+            "volume": null,
+            "__typename": "Products_measurements"
+          },
+          "medicalOnly": false,
+          "medicalPrices": [
+            60
+          ],
+          "medicalSpecialPrices": [],
+          "wholesalePrices": null,
+          "Name": "DIME - AIO Signature Line - Cactus Chill (H) (2.0g)",
+          "nonArmsLength": null,
+          "Options": [
+            "2g"
+          ],
+          "limitsPerCustomer": null,
+          "manualInventory": null,
+          "POSMetaData": {
+            "activeBatchTags": [],
+            "canonicalBrandId": "62891",
+            "canonicalBrandName": "Dime Industries",
+            "canonicalCategory": "Disposables: Distillate",
+            "canonicalCategoryId": "23443",
+            "canonicalID": "13781663",
+            "canonicalPackageId": "cc0402-2gd",
+            "canonicalImgUrl": "https://leaflogixmedia.blob.core.windows.net/product-image/013ac62d-9ea8-422d-9e89-6a6c5bc69551.jpg",
+            "canonicalLabResultUrl": "https://mintdeals.com/coa/",
+            "canonicalName": "DIME - AIO Signature Line - Cactus Chill (H) (2.0g)",
+            "canonicalProductTags": [],
+            "canonicalSKU": "23521157",
+            "canonicalStrainId": "595108",
+            "canonicalVendorId": null,
+            "children": [
+              {
+                "activeBatchTags": [],
+                "canonicalBrandId": "62891",
+                "canonicalBrandName": null,
+                "canonicalCategory": "Disposables: Distillate",
+                "canonicalCategoryId": "23443",
+                "canonicalEffectivePotencyMg": 1833.4,
+                "canonicalID": "13781663",
+                "canonicalPackageId": "cc0402-2gd",
+                "canonicalImgUrl": "https://leaflogixmedia.blob.core.windows.net/product-image/013ac62d-9ea8-422d-9e89-6a6c5bc69551.jpg",
+                "canonicalLabResultUrl": null,
+                "canonicalName": "DIME - AIO Signature Line - Cactus Chill (H) (2.0g)",
+                "canonicalSKU": "23521157",
+                "canonicalProductTags": [],
+                "canonicalStrainId": "595108",
+                "canonicalVendorId": null,
+                "kioskQuantityAvailable": 25,
+                "medPrice": null,
+                "option": "2g",
+                "packageQuantity": null,
+                "price": 60,
+                "quantity": 25,
+                "quantityAvailable": 25,
+                "recEquivalent": null,
+                "recPrice": 60,
+                "standardEquivalent": null,
+                "__typename": "Products_POSMetaData_children"
+              }
+            ],
+            "integrationID": "61eafbf414b193007d49e614",
+            "__typename": "Products_POSMetaData"
+          },
+          "Prices": [
+            60
+          ],
+          "pricingTierData": null,
+          "specialIdsPerOption": [
+            {
+              "option": "2g",
+              "conditionIds": [],
+              "rewardIds": [],
+              "__typename": "Products_specialIdsPerOption"
+            }
+          ],
+          "rawOptions": [
+            "2.0g"
+          ],
+          "recOnly": false,
+          "recPrices": [
+            60
+          ],
+          "recSpecialPrices": [
+            45
+          ],
+          "special": true,
+          "specialData": {
+            "bogoSpecials": null,
+            "saleSpecials": [
+              {
+                "createdBy": "ArmageddonDiscountSync",
+                "directPOSProductIdMapping": true,
+                "rawPOSWeightMapping": true,
+                "useLatestCartCalculator": null,
+                "discount": 25,
+                "discountStacking": false,
+                "dollarDiscount": false,
+                "eligibleProductOptions": [
+                  "2g"
+                ],
+                "menuType": "recreational",
+                "minorVersion": 0,
+                "nonStackingBehavior": "favorCustomer",
+                "payByBankIncentiveEnabled": null,
+                "paymentRestrictions": null,
+                "percentDiscount": true,
+                "saleDiscounts": [
+                  {
+                    "_id": "6a1cc544cfc88f000713f7b4",
+                    "brandIds": [
+                      "62891"
+                    ],
+                    "brandNames": null,
+                    "categoryIds": null,
+                    "categoryNames": null,
+                    "discountAmount": 25,
+                    "discountType": "percentDiscount",
+                    "enterpriseProductIds": null,
+                    "exclusions": null,
+                    "inventoryTags": null,
+                    "productGroup": "brands",
+                    "productIds": null,
+                    "productTags": null,
+                    "strainIds": null,
+                    "subcategoryIds": null,
+                    "subcategoryNames": null,
+                    "vendorIds": null,
+                    "weights": null,
+                    "weightOperator": null,
+                    "__typename": "SaleDiscount"
+                  }
+                ],
+                "settingsDerivedFrom": "special",
+                "skipV4Merge": null,
+                "source": "POS",
+                "sourceId": "380077",
+                "specialId": "69ceb76aa42e7700072d63dd",
+                "specialName": "25% Off Dime - All Products",
+                "specialType": "sale",
+                "specialRestrictions": {},
+                "stackingBehavior": "compounding",
+                "stackingMode": "non-stacking",
+                "targetPrice": false,
+                "useGreedOptimizedCalculator": null,
+                "useTotalQtyCalcsFix": null,
+                "version": 3,
+                "__typename": "Products_specialData_saleSpecials"
+              }
+            ],
+            "__typename": "Products_specialData"
+          },
+          "Status": "Active",
+          "strainType": "Hybrid",
+          "subcategory": "disposables",
+          "subcategories": null,
+          "THC": null,
+          "THCContent": {
+            "unit": "PERCENTAGE",
+            "range": [
+              91.67
+            ],
+            "__typename": "ProductPotency"
+          },
+          "totalTerpenes": null,
+          "type": "Vaporizers",
+          "vapeTaxApplicable": null,
+          "weight": 1000,
+          "featured": null,
+          "isBelowThreshold": false,
+          "isBelowKioskThreshold": false,
+          "optionsBelowThreshold": [],
+          "optionsBelowKioskThreshold": [],
+          "cName": "dime-aio-signature-line-cactus-chill-h-2-0g",
+          "pastCNames": [
+            "dime-aio-signature-line-cactus-chill-h-2-0g"
+          ],
+          "brandLogo": "https://s3-us-west-2.amazonaws.com/dutchie-images/03efb5383e9bff7d2cdbe1eda2e9fb98",
+          "bottleDepositTaxCents": null,
+          "useBetterPotencyTaxes": null,
+          "__typename": "Products",
+          "provider": "dutchie"
+        }
+      ],
+      "__typename": "PersonalizedProducts"
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "total_listings": 3
+  },
+  "data": {
+    "menu_items": [
+      {
+        "id": 222589215,
+        "name": "Baklava | Indoor Flower - 10g",
+        "brand": null,
+        "brand_endorsement": {
+          "brand_name": "Alien Labs",
+          "brand_slug": "alien-labs",
+          "brand_avatar_image_url": "https://images.weedmaps.com/brands/000/001/939/avatar/1603490338-weedmapsicon.png"
+        },
+        "category": {
+          "id": 1,
+          "name": "Indica",
+          "slug": "indica"
+        },
+        "edge_category": {
+          "name": "Big Buds",
+          "slug": "big-buds",
+          "ancestors": [
+            {
+              "uuid": "a780af3d-bdfe-41ce-a782-20f2519fd7be",
+              "name": "Flower",
+              "slug": "flower"
+            }
+          ]
+        },
+        "is_online_orderable": true,
+        "price_visibility": "visible",
+        "metrics": {
+          "aggregates": {
+            "thc": 25.23,
+            "thc_unit": "%",
+            "cbd": 0,
+            "cbd_unit": "%"
+          }
+        },
+        "price": {
+          "unit": "ounce",
+          "quantity": "1/8",
+          "label": "1/8 oz",
+          "compliance_net_mg": 3500,
+          "price": 50,
+          "on_sale": false,
+          "original_price": 50,
+          "discount_label": null
+        },
+        "avatar_image": {
+          "large_url": "https://images.weedmaps.com/products/000/970/558/avatar/1767363440-1767333677-440547407_08349481-6085-418f-9666-ed48cd3eeca8.jpg",
+          "original_url": "https://images.weedmaps.com/products/000/970/558/avatar/1767363440-1767333677-440547407_08349481-6085-418f-9666-ed48cd3eeca8.jpg"
+        }
+      },
+      {
+        "id": 212648232,
+        "name": "Wizard Trees | 3.5g Flower - Gas Gimlet",
+        "brand": null,
+        "brand_endorsement": {
+          "brand_name": "Wizard Trees",
+          "brand_slug": "wizard-trees",
+          "brand_avatar_image_url": "https://images.weedmaps.com/brands/000/053/898/avatar/1775226212-nebula_logo_avatar_copy.png"
+        },
+        "category": {
+          "id": 1,
+          "name": "Indica",
+          "slug": "indica"
+        },
+        "edge_category": {
+          "name": "Big Buds",
+          "slug": "big-buds",
+          "ancestors": [
+            {
+              "uuid": "a780af3d-bdfe-41ce-a782-20f2519fd7be",
+              "name": "Flower",
+              "slug": "flower"
+            }
+          ]
+        },
+        "is_online_orderable": true,
+        "price_visibility": "visible",
+        "metrics": {
+          "aggregates": {
+            "thc": 25.69,
+            "thc_unit": "%",
+            "cbd": 0,
+            "cbd_unit": "%"
+          }
+        },
+        "price": {
+          "unit": "ounce",
+          "quantity": "1/8",
+          "label": "1/8 oz",
+          "compliance_net_mg": 3500,
+          "price": 50,
+          "on_sale": false,
+          "original_price": 50,
+          "discount_label": null
+        },
+        "avatar_image": {
+          "large_url": "https://images.weedmaps.com/products/000/641/579/avatar/1770313915-wt_gas_gimlet_1200x1200weedmaps_ca_da.png",
+          "original_url": "https://images.weedmaps.com/products/000/641/579/avatar/1770313915-wt_gas_gimlet_1200x1200weedmaps_ca_da.png"
+        }
+      },
+      {
+        "id": 207055223,
+        "name": "Preferred Gardens | OG Marker | Big Buds Jar | 3.5g",
+        "brand": null,
+        "brand_endorsement": {
+          "brand_name": "Preferred Gardens",
+          "brand_slug": "preferred-gardens",
+          "brand_avatar_image_url": "https://images.weedmaps.com/brands/000/011/967/avatar/1739320657-preferredsocialcircle.png"
+        },
+        "category": {
+          "id": 1,
+          "name": "Indica",
+          "slug": "indica"
+        },
+        "edge_category": {
+          "name": "Big Buds",
+          "slug": "big-buds",
+          "ancestors": [
+            {
+              "uuid": "a780af3d-bdfe-41ce-a782-20f2519fd7be",
+              "name": "Flower",
+              "slug": "flower"
+            }
+          ]
+        },
+        "is_online_orderable": true,
+        "price_visibility": "visible",
+        "metrics": {
+          "aggregates": {
+            "thc": 27.59,
+            "thc_unit": "%",
+            "cbd": 0,
+            "cbd_unit": "%"
+          }
+        },
+        "price": {
+          "unit": "ounce",
+          "quantity": "1/8",
+          "label": "1/8 oz",
+          "compliance_net_mg": 3500,
+          "price": 30,
+          "on_sale": true,
+          "original_price": 45,
+          "discount_label": "-33%"
+        },
+        "avatar_image": {
+          "large_url": "https://images.weedmaps.com/products/000/843/128/avatar/1774046984-1756832022-og_marker.jpg",
+          "original_url": "https://images.weedmaps.com/products/000/843/128/avatar/1774046984-1756832022-og_marker.jpg"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,976 @@
+{
+  "dropped_brands": [
+    [
+      "Uncle X",
+      123
+    ],
+    [
+      "Jukebox",
+      92
+    ],
+    [
+      "turn",
+      74
+    ],
+    [
+      "Abstrakt",
+      62
+    ],
+    [
+      "hi-klas",
+      57
+    ],
+    [
+      "Fade Co",
+      55
+    ],
+    [
+      "FIND.",
+      46
+    ],
+    [
+      "Daze Off",
+      46
+    ],
+    [
+      "YiLo Gold 1g",
+      38
+    ],
+    [
+      "Dialed In Gummies",
+      38
+    ],
+    [
+      "Trip Cannabis",
+      37
+    ],
+    [
+      "Jamyn",
+      35
+    ],
+    [
+      "HighWay 14",
+      35
+    ],
+    [
+      "TRU Infusion",
+      35
+    ],
+    [
+      "OGeez!",
+      34
+    ],
+    [
+      "Presidential",
+      34
+    ],
+    [
+      "Caviar Gold",
+      34
+    ],
+    [
+      "High Octave",
+      31
+    ],
+    [
+      "High Ground",
+      30
+    ],
+    [
+      "YiLo Gummies",
+      28
+    ],
+    [
+      "YiLo 100mg Drinks",
+      27
+    ],
+    [
+      "Sunday Goods",
+      26
+    ],
+    [
+      "Savvy",
+      25
+    ],
+    [
+      "High Five",
+      25
+    ],
+    [
+      "YiLo Brownies",
+      23
+    ],
+    [
+      "Puff",
+      22
+    ],
+    [
+      "Smokiez Edibles",
+      21
+    ],
+    [
+      "Pure Edibles",
+      20
+    ],
+    [
+      "Grassroots Cannabis",
+      20
+    ],
+    [
+      "High Westys",
+      19
+    ],
+    [
+      "Fade Co.",
+      17
+    ],
+    [
+      "Keef",
+      17
+    ],
+    [
+      "Jamyn AIO",
+      17
+    ],
+    [
+      "The Pharm",
+      16
+    ],
+    [
+      "(the) Essence",
+      15
+    ],
+    [
+      "Birdies",
+      15
+    ],
+    [
+      "Diamond Westys",
+      15
+    ],
+    [
+      "YiLo Gold .5g",
+      15
+    ],
+    [
+      "DOJA",
+      15
+    ],
+    [
+      "Seed Junky",
+      14
+    ],
+    [
+      "Leafers",
+      14
+    ],
+    [
+      "YiLo Chocolate Bars",
+      14
+    ],
+    [
+      "Baked Bros\u2122",
+      14
+    ],
+    [
+      "Dark Heart",
+      14
+    ],
+    [
+      "Sonoran Roots",
+      14
+    ],
+    [
+      "Swiitch",
+      13
+    ],
+    [
+      "Sip",
+      13
+    ],
+    [
+      "YiLo Shooters",
+      12
+    ],
+    [
+      "YiLo Cakes",
+      12
+    ],
+    [
+      "Flavors",
+      12
+    ],
+    [
+      "YiLo Dab Stix",
+      10
+    ],
+    [
+      "Faded Affiliation",
+      10
+    ],
+    [
+      "MCG",
+      10
+    ],
+    [
+      "Brix",
+      9
+    ],
+    [
+      "Magic Number",
+      9
+    ],
+    [
+      "Relive Everyday",
+      9
+    ],
+    [
+      "MC",
+      9
+    ],
+    [
+      "Sativa Cannabis Co",
+      9
+    ],
+    [
+      "Toasted",
+      9
+    ],
+    [
+      "Project Packs",
+      8
+    ],
+    [
+      "Feel Sublime",
+      8
+    ],
+    [
+      "Infused Five",
+      8
+    ],
+    [
+      "Diablo",
+      8
+    ],
+    [
+      "Verano",
+      8
+    ],
+    [
+      "Clout King Canna",
+      8
+    ],
+    [
+      "Clean Concentrates",
+      8
+    ],
+    [
+      "OGeez! Brands",
+      8
+    ],
+    [
+      "Fleur Cannabis",
+      8
+    ],
+    [
+      "Good Tide",
+      7
+    ],
+    [
+      "Crescendo Cannabis",
+      7
+    ],
+    [
+      "Hot Rod",
+      7
+    ],
+    [
+      "Feno",
+      7
+    ],
+    [
+      "Indica Cannabis Co",
+      7
+    ],
+    [
+      "Bits",
+      6
+    ],
+    [
+      "YiLo Cookies",
+      6
+    ],
+    [
+      "Vortex Cannabis",
+      6
+    ],
+    [
+      "The Vault",
+      6
+    ],
+    [
+      "Keef Brands",
+      6
+    ],
+    [
+      "Lunchbox Alchemy",
+      6
+    ],
+    [
+      "Uncle Arnie's",
+      5
+    ],
+    [
+      "YiLo Tier 1",
+      5
+    ],
+    [
+      "YiLo Tier 2",
+      5
+    ],
+    [
+      "WZRD Extracts",
+      5
+    ],
+    [
+      "PIXILS",
+      4
+    ],
+    [
+      "Mfused",
+      4
+    ],
+    [
+      "Rhinestone",
+      4
+    ],
+    [
+      "YiLo Butter",
+      4
+    ],
+    [
+      "YiLo Chewys",
+      4
+    ],
+    [
+      "Twisted 14",
+      4
+    ],
+    [
+      "YiLo Reserve",
+      4
+    ],
+    [
+      "YiLo Private Reserve",
+      4
+    ],
+    [
+      "YiLo Hard Candy",
+      4
+    ],
+    [
+      "Loud Pax",
+      4
+    ],
+    [
+      "Pot Deli",
+      4
+    ],
+    [
+      "Mac Pharms",
+      4
+    ],
+    [
+      "The Good",
+      4
+    ],
+    [
+      "CAKE she hits different",
+      3
+    ],
+    [
+      "potpots",
+      3
+    ],
+    [
+      "Select",
+      3
+    ],
+    [
+      "YiLo Krispies",
+      3
+    ],
+    [
+      "YiLo Kief & Hash",
+      3
+    ],
+    [
+      "Cigaweeds",
+      3
+    ],
+    [
+      "GoldSmith",
+      3
+    ],
+    [
+      "White Label Extracts",
+      3
+    ],
+    [
+      "Infinite Life",
+      3
+    ],
+    [
+      "Phoenician Engineering",
+      3
+    ],
+    [
+      "Legends Canna Co.",
+      3
+    ],
+    [
+      "YiLo Preroll",
+      3
+    ],
+    [
+      "YiLo Dab Bucket",
+      2
+    ],
+    [
+      "YiLo Frozen Treats",
+      2
+    ],
+    [
+      "Fokai Labs",
+      2
+    ],
+    [
+      "Deep Stories",
+      2
+    ],
+    [
+      "$85 OZ",
+      2
+    ],
+    [
+      "Pure Nirvana",
+      2
+    ],
+    [
+      "project packs",
+      2
+    ],
+    [
+      "House",
+      2
+    ],
+    [
+      "Great Lakes Natural Remedies",
+      2
+    ],
+    [
+      "Flav",
+      2
+    ],
+    [
+      "ROVE",
+      2
+    ],
+    [
+      "The Blues Brothers",
+      2
+    ],
+    [
+      "On The Rocks",
+      2
+    ],
+    [
+      "Vital",
+      2
+    ],
+    [
+      "Prism",
+      2
+    ],
+    [
+      "Mr Honey",
+      1
+    ],
+    [
+      "Preferred Gardens",
+      1
+    ],
+    [
+      "Micro Bar",
+      1
+    ],
+    [
+      "Jets",
+      1
+    ],
+    [
+      "HighTide",
+      1
+    ],
+    [
+      "YiLo Spring Rolls",
+      1
+    ],
+    [
+      "YiLo Concentrates",
+      1
+    ],
+    [
+      "$100 OZ",
+      1
+    ],
+    [
+      "Flower",
+      1
+    ],
+    [
+      "Giving Tree",
+      1
+    ],
+    [
+      "Smoken Promises",
+      1
+    ],
+    [
+      "Life is Chill",
+      1
+    ],
+    [
+      "Pucks\u2122 Craft Made Edibles",
+      1
+    ],
+    [
+      "Cannabis Co",
+      1
+    ],
+    [
+      "YiLo Gold Nuggets",
+      1
+    ],
+    [
+      "BudBros",
+      1
+    ],
+    [
+      "Doja Pack",
+      1
+    ]
+  ],
+  "kept_brands": [
+    [
+      "STIIIZY",
+      140
+    ],
+    [
+      "Mohave Cannabis Co.",
+      121
+    ],
+    [
+      "Copperstate Farms",
+      102
+    ],
+    [
+      "Gr\u00f6n",
+      92
+    ],
+    [
+      "Timeless",
+      86
+    ],
+    [
+      "Wyld",
+      79
+    ],
+    [
+      "Jeeter",
+      79
+    ],
+    [
+      "Grow Sciences",
+      61
+    ],
+    [
+      "Green Dot Labs",
+      51
+    ],
+    [
+      "Connected Cannabis Co.",
+      50
+    ],
+    [
+      "Dime Industries",
+      43
+    ],
+    [
+      "22Red",
+      41
+    ],
+    [
+      "Aeriz",
+      41
+    ],
+    [
+      "Baked Bros",
+      30
+    ],
+    [
+      "AlienLabs",
+      29
+    ],
+    [
+      "Wana",
+      26
+    ],
+    [
+      "Timeless Vapes",
+      26
+    ],
+    [
+      "Sluggers",
+      18
+    ],
+    [
+      "Drip Vapes",
+      14
+    ],
+    [
+      "Modern Flower",
+      13
+    ],
+    [
+      "MADE",
+      13
+    ],
+    [
+      "Wana Brands",
+      12
+    ],
+    [
+      "Alien Labs",
+      11
+    ],
+    [
+      "Sublime Brands",
+      9
+    ],
+    [
+      "Canamo Concentrates",
+      8
+    ],
+    [
+      "Shango",
+      4
+    ],
+    [
+      "Sofa King",
+      4
+    ],
+    [
+      "Wizard Trees",
+      3
+    ],
+    [
+      "Made",
+      2
+    ],
+    [
+      "Glorious Extracts",
+      2
+    ],
+    [
+      "High Grade AZ",
+      1
+    ],
+    [
+      "High Grade",
+      1
+    ],
+    [
+      "Connected Cannabis",
+      1
+    ]
+  ],
+  "per_store": {
+    "Sol Flower - Scottsdale Airpark": {
+      "platform": "JointCommerce",
+      "items": 297,
+      "kept": 142,
+      "dropped": 155
+    },
+    "Sol Flower - McClintock": {
+      "platform": "JointCommerce",
+      "items": 301,
+      "kept": 158,
+      "dropped": 143
+    },
+    "Sol Flower - 32nd & Shea": {
+      "platform": "JointCommerce",
+      "items": 303,
+      "kept": 148,
+      "dropped": 155
+    },
+    "YiLo Superstore - Arcadia": {
+      "platform": "JointCommerce",
+      "items": 291,
+      "kept": 19,
+      "dropped": 272
+    },
+    "The Mint": {
+      "platform": "Dutchie",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "The Mint Scottsdale": {
+      "platform": "Dutchie",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "TruMed": {
+      "platform": "TruMed",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Sunday Goods - Tempe": {
+      "platform": "Leafly",
+      "items": 72,
+      "kept": 23,
+      "dropped": 49
+    },
+    "Nirvana Center": {
+      "platform": "Leafly",
+      "items": 72,
+      "kept": 16,
+      "dropped": 56
+    },
+    "The Mint Cannabis - Scottsdale": {
+      "platform": "Leafly",
+      "items": 71,
+      "kept": 35,
+      "dropped": 36
+    },
+    "Curaleaf - Scottsdale": {
+      "platform": "Leafly",
+      "items": 62,
+      "kept": 21,
+      "dropped": 41
+    },
+    "JARS Cannabis - Phoenix/Arcadia": {
+      "platform": "Leafly",
+      "items": 72,
+      "kept": 70,
+      "dropped": 2
+    },
+    "Zen Leaf - Arcadia": {
+      "platform": "Leafly",
+      "items": 64,
+      "kept": 20,
+      "dropped": 44
+    },
+    "Story Cannabis": {
+      "platform": "Dutchie",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Sunday Goods - Phoenix": {
+      "platform": "Leafly",
+      "items": 71,
+      "kept": 29,
+      "dropped": 42
+    },
+    "Cannabist - Tempe": {
+      "platform": "Leafly",
+      "items": 58,
+      "kept": 23,
+      "dropped": 35
+    },
+    "Cookies - Tempe": {
+      "platform": "Leafly",
+      "items": 36,
+      "kept": 18,
+      "dropped": 18
+    },
+    "Curaleaf - Midtown Phoenix": {
+      "platform": "Leafly",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Curaleaf - Camelback": {
+      "platform": "Leafly",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "The Flower Shop - Phoenix": {
+      "platform": "Leafly",
+      "items": 18,
+      "kept": 16,
+      "dropped": 2
+    },
+    "The Superior Dispensary": {
+      "platform": "Leafly",
+      "items": 54,
+      "kept": 23,
+      "dropped": 31
+    },
+    "Story Cannabis - Midtown Phoenix": {
+      "platform": "Leafly",
+      "items": 54,
+      "kept": 20,
+      "dropped": 34
+    },
+    "Story Cannabis - Dunlap": {
+      "platform": "Leafly",
+      "items": 54,
+      "kept": 15,
+      "dropped": 39
+    },
+    "JARS Cannabis - Cave Creek": {
+      "platform": "Leafly",
+      "items": 36,
+      "kept": 35,
+      "dropped": 1
+    },
+    "Zen Leaf - Cave Creek": {
+      "platform": "Leafly",
+      "items": 49,
+      "kept": 17,
+      "dropped": 32
+    },
+    "The Mint Cannabis - Northern": {
+      "platform": "Leafly",
+      "items": 53,
+      "kept": 15,
+      "dropped": 38
+    },
+    "Curaleaf - Bell Rd": {
+      "platform": "Leafly",
+      "items": 54,
+      "kept": 11,
+      "dropped": 43
+    },
+    "Ponderosa Dispensary - Phoenix": {
+      "platform": "Leafly",
+      "items": 33,
+      "kept": 13,
+      "dropped": 20
+    },
+    "JARS Cannabis - Metro Center": {
+      "platform": "Leafly",
+      "items": 54,
+      "kept": 54,
+      "dropped": 0
+    },
+    "JARS Cannabis - Phoenix Airport": {
+      "platform": "Leafly",
+      "items": 54,
+      "kept": 37,
+      "dropped": 17
+    },
+    "Curaleaf - 48th Street": {
+      "platform": "Leafly",
+      "items": 54,
+      "kept": 17,
+      "dropped": 37
+    },
+    "The Good Dispensary - Mesa/Tempe": {
+      "platform": "Leafly",
+      "items": 36,
+      "kept": 6,
+      "dropped": 30
+    },
+    "Zen Leaf - Dunlap": {
+      "platform": "Leafly",
+      "items": 54,
+      "kept": 17,
+      "dropped": 37
+    },
+    "Trulieve - Scottsdale": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Trulieve - Tempe": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Sticky Saguaro": {
+      "platform": "Leafly",
+      "items": 64,
+      "kept": 42,
+      "dropped": 22
+    },
+    "Trulieve - Phoenix Tatum": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Trulieve - Phoenix North Mountain": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Trulieve - Phoenix Roosevelt Row": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Trulieve - Phoenix Alhambra": {
+      "platform": "Dutchie",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Trulieve - Guadalupe": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Trulieve - North Mesa": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Trulieve - South Mesa": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "Trulieve - Glendale": {
+      "platform": "Trulieve",
+      "items": 0,
+      "kept": 0,
+      "dropped": 0
+    },
+    "YiLo Superstore - Phoenix (Thunderbird)": {
+      "platform": "JointCommerce",
+      "items": 284,
+      "kept": 5,
+      "dropped": 279
+    },
+    "Sol Flower - Tempe University": {
+      "platform": "JointCommerce",
+      "items": 300,
+      "kept": 148,
+      "dropped": 152
+    }
+  }
+}

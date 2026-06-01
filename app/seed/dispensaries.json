@@ -1,0 +1,547 @@
+{
+  "locations": [
+    {
+      "id": "oldtown",
+      "label": "Old Town",
+      "sub": "85251",
+      "icon": "🏠"
+    },
+    {
+      "id": "north",
+      "label": "N. Scottsdale",
+      "sub": "85255",
+      "icon": "📍"
+    },
+    {
+      "id": "tempe",
+      "label": "Downtown Tempe",
+      "sub": "85281",
+      "icon": "📍"
+    },
+    {
+      "id": "phx",
+      "label": "Midtown Phoenix",
+      "sub": "85015",
+      "icon": "📍"
+    }
+  ],
+  "dispensaries": [
+    {
+      "name": "Sol Flower - Scottsdale Airpark",
+      "addr": "14980 N 78th Way, Suite 204, Scottsdale, AZ 85260",
+      "platform": "JointCommerce",
+      "business_id": "5797",
+      "menu": "https://www.livewithsol.com/menu/",
+      "active": true,
+      "note": "Live-verified via ProprietaryAdapter (JointCommerce httpx, no browser): the prior solflower.com URL was wrong; livewithsol.com runs the joint-ecommerce _search API, store selected by businessId 5797. ~577 products incl. allowlisted Copperstate/Wyld/Baked Bros.",
+      "dist": {
+        "oldtown": 6.0,
+        "north": 3.0,
+        "tempe": 10.0,
+        "phx": 12.0
+      }
+    },
+    {
+      "name": "Sol Flower - McClintock",
+      "addr": "1322 N McClintock Dr, Tempe, AZ 85281",
+      "platform": "JointCommerce",
+      "business_id": "5799",
+      "menu": "https://www.livewithsol.com/menu/",
+      "active": true,
+      "note": "Live-verified via ProprietaryAdapter (JointCommerce httpx): businessId 5799.",
+      "dist": {
+        "oldtown": 5.0,
+        "north": 12.0,
+        "tempe": 2.0,
+        "phx": 9.0
+      }
+    },
+    {
+      "name": "Sol Flower - 32nd & Shea",
+      "addr": "3217 E Shea Blvd, Suite 1 A, Phoenix, AZ 85028",
+      "platform": "JointCommerce",
+      "business_id": "5796",
+      "menu": "https://www.livewithsol.com/menu/",
+      "active": true,
+      "note": "Live-verified via ProprietaryAdapter (JointCommerce httpx): businessId 5796 (North Phoenix, near Sunnyslope).",
+      "dist": {
+        "oldtown": 6.0,
+        "north": 7.0,
+        "tempe": 12.0,
+        "phx": 6.0
+      }
+    },
+    {
+      "name": "YiLo Superstore - Arcadia",
+      "addr": "4456 E Thomas Rd, Phoenix, AZ 85018",
+      "platform": "JointCommerce",
+      "business_id": "5856",
+      "menu": "https://yilo.com/menu/",
+      "active": true,
+      "note": "Live-verified via ProprietaryAdapter (JointCommerce httpx, no browser): yilo.com runs the same joint-ecommerce _search API, store selected by businessId 5856. ~671 products incl. allowlisted Shango plus YiLo house brand.",
+      "dist": {
+        "oldtown": 4.0,
+        "north": 14.0,
+        "tempe": 6.0,
+        "phx": 5.0
+      }
+    },
+    {
+      "name": "The Mint",
+      "addr": "5210 S Priest Dr, Guadalupe, AZ 85283",
+      "platform": "Dutchie",
+      "menu": "https://mintdeals.com/tempe-az/menu/",
+      "active": true,
+      "dist": {
+        "oldtown": 4.1,
+        "north": 9.6,
+        "tempe": 1.2,
+        "phx": 7.5
+      }
+    },
+    {
+      "name": "The Mint Scottsdale",
+      "addr": "8729 E Manzanita Dr, Scottsdale, AZ 85258",
+      "platform": "Dutchie",
+      "menu": "https://mintdeals.com/scottsdale-az/menu/",
+      "active": true,
+      "dist": {
+        "oldtown": 2.8,
+        "north": 5.0,
+        "tempe": 6.0,
+        "phx": 8.5
+      }
+    },
+    {
+      "name": "Cookies on Camelback",
+      "addr": "1842 W Camelback Rd, Phoenix, AZ 85015",
+      "platform": "Cookies.co",
+      "menu": "https://cookies.co/pages/store-locator",
+      "active": false,
+      "note": "DEACTIVATED: not a real dispensary menu. cookies.co is the national brand site (expired TLS cert, no orderable AZ menu) and there is no 'Cookies on Camelback' storefront. The only AZ Cookies dispensary is Cookies Tempe, already covered by the 'Cookies - Tempe' Leafly entry. CookiesAdapter (Shopify /products.json) remains registered for any future Shopify dispensary menu.",
+      "dist": {
+        "oldtown": 5.8,
+        "north": 9.1,
+        "tempe": 6.5,
+        "phx": 1.5
+      }
+    },
+    {
+      "name": "TruMed",
+      "addr": "1240 E McDowell Rd, Phoenix, AZ 85006",
+      "platform": "TruMed",
+      "menu": "https://trumedaz.com/shop/",
+      "active": true,
+      "note": "trumedaz.com/shop embeds a Dutchie storefront (?dtche[...] params + dutchie.com/api/v2/embedded-menu/<id>.js). Scraped via TruMedAdapter, which reuses the Trulieve embed-resolution + Dutchie GraphQL/Playwright path.",
+      "dist": {
+        "oldtown": 6.4,
+        "north": 9.7,
+        "tempe": 5.5,
+        "phx": 2.5
+      }
+    },
+    {
+      "name": "Sunday Goods - Tempe",
+      "addr": "723 N Scottsdale Rd, Tempe, AZ 85281",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/sunday-goods-dispensary-tempe/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 18 flower items. Repointed from the unreadable Dutchie storefront to Leafly."
+    },
+    {
+      "name": "Nirvana Center",
+      "addr": "702 E Buckeye Rd, Phoenix, AZ 85034",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/nirvana-center-downtown-phoenix/menu",
+      "active": true,
+      "note": "Repointed to the real Leafly 'Nirvana Cannabis - Downtown Phoenix' menu (the prior 32nd St location is not on Leafly). Live-verified: carries allowlisted flower (Grow Sciences, CAM/Copperstate, High Grade AZ).",
+      "dist": {
+        "oldtown": 9.3,
+        "north": 19.0,
+        "tempe": 7.0,
+        "phx": 6.6
+      }
+    },
+    {
+      "name": "The Mint Cannabis - Scottsdale",
+      "addr": "8729 E Manzanita Dr, Scottsdale, AZ 85258",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/the-mint-cannabis-scottsdale/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter: allowlisted flower incl. 22Red, Alien Labs (Mint's house flower on Dutchie is not allowlisted; Leafly surfaces its top-shelf).",
+      "dist": {
+        "oldtown": 2.8,
+        "north": 5.0,
+        "tempe": 6.0,
+        "phx": 8.5
+      }
+    },
+    {
+      "name": "Curaleaf - Scottsdale",
+      "addr": "16277 N Greenway Hayden Loop, Scottsdale, AZ 85260",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/curaleaf-scottsdale/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter: allowlisted flower incl. 22Red (deep 50% off).",
+      "dist": {
+        "oldtown": 8.9,
+        "north": 4.8,
+        "tempe": 13.2,
+        "phx": 14.4
+      }
+    },
+    {
+      "name": "JARS Cannabis - Phoenix/Arcadia",
+      "addr": "3001 N 24th St, Phoenix, AZ 85016",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/jars-cannabis-phoenix-arcadia/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter: strongest flower coverage so far (Alien Labs, Grow Sciences).",
+      "dist": {
+        "oldtown": 6.1,
+        "north": 16.8,
+        "tempe": 6.1,
+        "phx": 4.7
+      }
+    },
+    {
+      "name": "Zen Leaf - Arcadia",
+      "addr": "2710 E Indian School Rd, Phoenix, AZ 85016",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/local-joint-by-zen-leaf-med/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter: allowlisted flower incl. Aeriz, Alien Labs.",
+      "dist": {
+        "oldtown": 5.6,
+        "north": 15.6,
+        "tempe": 6.5,
+        "phx": 4.6
+      }
+    },
+    {
+      "name": "Story Cannabis",
+      "addr": "7200 E 2nd St, Scottsdale, AZ 85251",
+      "platform": "Dutchie",
+      "menu": "https://dutchie.com/dispensary/story-cannabis-scottsdale",
+      "active": true,
+      "dist": {
+        "oldtown": 2.8,
+        "north": 7.4,
+        "tempe": 5.0,
+        "phx": 6.5
+      }
+    },
+    {
+      "name": "Local Joint",
+      "addr": "10617 N Hayden Rd, Scottsdale, AZ 85260",
+      "platform": "Weedmaps",
+      "menu": "https://weedmaps.com/dispensaries/local-joint-scottsdale",
+      "active": false,
+      "note": "DEACTIVATED: Weedmaps route is Akamai-gated (httpx 406; in-browser API fetch also blocked -> 0 items), the seeded Hayden Rd address is stale (now a counseling office), and Local Joint (localjointaz.com) has no verified Leafly/Dutchie menu to re-point to. WeedmapsAdapter remains registered for stores that do resolve. Flip active if a working menu URL is found.",
+      "dist": {
+        "oldtown": 5.1,
+        "north": 1.8,
+        "tempe": 9.1,
+        "phx": 9.8
+      }
+    },
+    {
+      "name": "Curaleaf - Camelback (WM)",
+      "addr": "1040 E Camelback Rd Suite A, Phoenix, AZ 85014",
+      "platform": "Weedmaps",
+      "menu": "https://weedmaps.com/dispensaries/curaleaf-camelback",
+      "active": false,
+      "note": "Curaleaf runs its own headless menu (curaleaf.com/shop) with no public adapter, and its catalog is almost entirely house brands (Curaleaf/Select) that aren't on the top-shelf allowlist. A Weedmaps mirror exists, but the allowlisted top-shelf coverage is already provided by the 'Curaleaf - Camelback' Leafly entry. Left inactive to avoid a duplicate physical store; flip active+Weedmaps if house brands are later allowlisted.",
+      "dist": {
+        "oldtown": 6.0,
+        "north": 9.3,
+        "tempe": 6.8,
+        "phx": 1.8
+      }
+    },
+    {
+      "name": "Sunday Goods - Phoenix",
+      "addr": "1616 E. Glendale Ave, Phoenix, AZ 85020",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/sunday-goods-dispensary/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 19 flower items."
+    },
+    {
+      "name": "Cannabist - Tempe",
+      "addr": "520 S Price Rd, Tempe, AZ 85281",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/cannabist-tempe-med/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 18 flower items."
+    },
+    {
+      "name": "Cookies - Tempe",
+      "addr": "2715 S Hardy Dr, Tempe, AZ 85282",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/cookies-tempe/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 23 flower items."
+    },
+    {
+      "name": "Curaleaf - Midtown Phoenix",
+      "addr": "2918 N Central Ave, Phoenix, AZ 85012",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/curaleaf-midtown/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 18 flower items."
+    },
+    {
+      "name": "Curaleaf - Camelback",
+      "addr": "1040 E Camelback Road, Phoenix, AZ 85014",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/curaleaf-camelback/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 28 flower items."
+    },
+    {
+      "name": "The Flower Shop - Phoenix",
+      "addr": "3155 E McDowell Rd, Phoenix, AZ 85008",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/the-flower-shop-phoenix/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 18 flower items."
+    },
+    {
+      "name": "The Superior Dispensary",
+      "addr": "211 S 57th Dr, Phoenix, AZ 85043",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/the-superior-dispensary/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 36 flower items."
+    },
+    {
+      "name": "Story Cannabis - Midtown Phoenix",
+      "addr": "3830 N. 7th St., Phoenix, AZ 85014",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/story-midtown-phoenix/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 39 flower items."
+    },
+    {
+      "name": "Story Cannabis - Dunlap",
+      "addr": "701 E Dunlap Ave, Suite 9, Phoenix, AZ 85020",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/story-cannabis-dunlap/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 40 flower items."
+    },
+    {
+      "name": "JARS Cannabis - Cave Creek",
+      "addr": "12620 North Cave Creek Road, Suite #1, Phoenix, AZ 85022",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/jars-cannabis-cave-creek/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 18 flower items."
+    },
+    {
+      "name": "Zen Leaf - Cave Creek",
+      "addr": "12401 North Cave Creek Road, Phoenix, AZ 85022",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/zen-leaf-cave-creek-/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 36 flower items."
+    },
+    {
+      "name": "The Mint Cannabis - Northern",
+      "addr": "2444 W Northern Ave, Phoenix, AZ 85021",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/the-mint-cannabis-northern/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 36 flower items."
+    },
+    {
+      "name": "Curaleaf - Bell Rd",
+      "addr": "17201 N 19th Ave., Phoenix, AZ 85023",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/curaleaf-bell-road/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 41 flower items."
+    },
+    {
+      "name": "Ponderosa Dispensary - Phoenix",
+      "addr": "21035 N Cave Creek Rd, Suite C3 & C4, Phoenix, AZ 85024",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/ponderosa-dispensary-phoenix/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 43 flower items."
+    },
+    {
+      "name": "JARS Cannabis - Metro Center",
+      "addr": "10040 N Metro Pkwy W, Phoenix, AZ 85051",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/jars-cannabis-metrocenter/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 18 flower items."
+    },
+    {
+      "name": "JARS Cannabis - Phoenix Airport",
+      "addr": "2412 East University Drive, Phoenix, AZ 85034",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/jars-cannabis-phoenix/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 36 flower items."
+    },
+    {
+      "name": "Curaleaf - 48th Street",
+      "addr": "4730 South 48th Street, Phoenix, AZ 85040",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/curaleaf-48th-street/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 42 flower items."
+    },
+    {
+      "name": "The Good Dispensary - Mesa/Tempe",
+      "addr": "1842 W Broadway, Mesa, AZ 85202",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/the-good-dispensary/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 36 flower items."
+    },
+    {
+      "name": "Zen Leaf - Dunlap",
+      "addr": "4244 W Dunlap Ave., Phoenix, AZ 85051",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/zen-leaf-dunlap-/menu",
+      "active": true,
+      "note": "Live-verified via LeaflyAdapter (httpx, no browser): 36 flower items."
+    },
+    {
+      "name": "Trulieve - Scottsdale",
+      "addr": "15190 N Hayden Rd, Scottsdale, AZ 85260",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/scottsdale",
+      "active": true,
+      "note": "Demoted from Weedmaps (Akamai 406) to the direct TrulieveAdapter (embedded Dutchie storefront) which live-verifies with near-total promo coverage. Nearest Trulieve to home zips.",
+      "dist": {
+        "oldtown": 7.0,
+        "north": 3.0,
+        "tempe": 11.0,
+        "phx": 13.0
+      }
+    },
+    {
+      "name": "Trulieve - Tempe",
+      "addr": "710 W Elliot Rd, Suite 101, Tempe, AZ 85284",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/tempe",
+      "active": true,
+      "note": "Demoted from Weedmaps (Akamai 406) to the direct TrulieveAdapter (embedded Dutchie storefront). Formerly Harvest HOC of Tempe (Harvest is now Trulieve).",
+      "dist": {
+        "oldtown": 9.0,
+        "north": 15.0,
+        "tempe": 6.0,
+        "phx": 12.0
+      }
+    },
+    {
+      "name": "Sticky Saguaro",
+      "addr": "12338 E Riggs Rd, Chandler, AZ 85249",
+      "platform": "Leafly",
+      "menu": "https://www.leafly.com/dispensary-info/sticky-saguaro-chandler/menu",
+      "active": true,
+      "note": "Is on Leafly after all (the prior skip was wrong); live-verified reachable via LeaflyAdapter (httpx, no browser). NOTE: Chandler, ~20 mi out \u2014 beyond the 7-mi radius, so the UI distance filter will usually hide it.",
+      "dist": {
+        "oldtown": 22.0,
+        "north": 28.0,
+        "tempe": 18.0,
+        "phx": 25.0
+      }
+    },
+    {
+      "name": "Trulieve - Phoenix Tatum",
+      "addr": "16635 N Tatum Blvd, Phoenix, AZ 85032",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/phoenix-tatum",
+      "active": true,
+      "note": "Live-verified via TrulieveAdapter (one bounded Playwright render of the embedded Dutchie storefront trulieve-of-phoenix-tatum): 25 flower items. North Phoenix / near Desert Ridge, ~3 mi from the 85050 anchor."
+    },
+    {
+      "name": "Trulieve - Phoenix North Mountain",
+      "addr": "2017 W Peoria Ave, Phoenix, AZ 85029",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/phoenix-north-mountain",
+      "active": true,
+      "note": "Live-verified via TrulieveAdapter (Dutchie storefront harvest-of-phoenix): 25 flower items. Formerly Harvest of Phoenix."
+    },
+    {
+      "name": "Trulieve - Phoenix Roosevelt Row",
+      "addr": "1007 N 7th St, Phoenix, AZ 85006",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/phoenix-roosevelt",
+      "active": true,
+      "note": "Live-verified via TrulieveAdapter (Dutchie storefront trulieve-phx-roosevelt): 30 items / 25 flower. Downtown/Midtown Phoenix."
+    },
+    {
+      "name": "Trulieve - Phoenix Alhambra",
+      "addr": "2630 W Indian School Rd, Phoenix, AZ 85017",
+      "platform": "Dutchie",
+      "menu": "https://dutchie.com/dispensary/urban-green-house",
+      "active": true,
+      "note": "Trulieve/Harvest Alhambra. Live-verified via DutchieAdapter: 198 items / 68 flower. Added on platform 'Dutchie' (cName urban-green-house) because this store's trulieve.com page embeds a short base62 Dutchie retailer id (FPr47JWuB7N4Hr3oN) that the TrulieveAdapter's 24-hex resolver can't match; the underlying Dutchie storefront verifies directly."
+    },
+    {
+      "name": "Trulieve - Guadalupe",
+      "addr": "1821 W Baseline Rd, Guadalupe, AZ 85283",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/guadalupe",
+      "active": true,
+      "note": "Live-verified via TrulieveAdapter (Dutchie storefront harvest-of-baseline): 117 items / 36 flower. Just south of Tempe; serves the Tempe/Ahwatukee corridor."
+    },
+    {
+      "name": "Trulieve - North Mesa",
+      "addr": "1150 W McLellan Rd, Mesa, AZ 85201",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/mesa-north",
+      "active": true,
+      "note": "Live-verified via TrulieveAdapter (Dutchie storefront harvest-of-north-mesa): 50 items / 41 flower. ~5 mi from the Tempe anchor."
+    },
+    {
+      "name": "Trulieve - South Mesa",
+      "addr": "938 E Juanita Ave, Mesa, AZ 85204",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/mesa-south",
+      "active": true,
+      "note": "Live-verified via TrulieveAdapter (Dutchie storefront harvest-of-mesa): 25 flower items. ~9 mi from the Tempe anchor (edge of radius)."
+    },
+    {
+      "name": "Trulieve - Glendale",
+      "addr": "13631 N 59th Ave, Glendale, AZ 85304",
+      "platform": "Trulieve",
+      "menu": "https://www.trulieve.com/dispensaries/arizona/glendale",
+      "active": true,
+      "note": "Live-verified via TrulieveAdapter (Dutchie storefront harvest-of-glendale): 123 items / 48 flower. ~8 mi NW of Midtown Phoenix."
+    },
+    {
+      "name": "YiLo Superstore - Phoenix (Thunderbird)",
+      "addr": "2841 W Thunderbird Rd, Phoenix, AZ 85053",
+      "platform": "JointCommerce",
+      "business_id": "5855",
+      "menu": "https://yilo.com/menu/",
+      "active": true,
+      "note": "YiLo's second store (Arcadia is 5856). Live-verified via ProprietaryAdapter (JointCommerce httpx, no browser): 284 items / 63 flower, businessId 5855 from yilo.com's window.jointEcommerce store map. YiLo runs JointCommerce (not Jane/Dutchie) on yilo.com."
+    },
+    {
+      "name": "Sol Flower - Tempe University",
+      "addr": "2424 W University Dr, Tempe, AZ 85281",
+      "platform": "JointCommerce",
+      "business_id": "5800",
+      "menu": "https://www.livewithsol.com/menu/",
+      "active": true,
+      "note": "Live-verified via ProprietaryAdapter (JointCommerce httpx, no browser): 300 items / 30 flower, businessId 5800 from livewithsol.com's window.jointEcommerce store map. Sol Flower runs JointCommerce (not Dutchie). The 'Deer Valley' location advertised on the marketing site is NOT in the live ordering config (no businessId / no online menu), so it was not added."
+    },
+    {
+      "name": "Nature's Medicines - Phoenix",
+      "addr": "2439 W McDowell Rd, Phoenix, AZ 85009",
+      "platform": "Dutchie",
+      "menu": "https://naturesmedicines.com/",
+      "active": false,
+      "note": "SKIPPED (no online menu to scrape). The AZ entity (naturemedaz.com) is Cloudflare-gated and its listings are 'in-store purchases only'; the corporate Dutchie-Plus site (naturesmedicines.com) no longer carries AZ stores, and no Dutchie/Weedmaps slug resolves to a live menu. Left inactive with this note rather than the earlier (incorrect) 'not on Leafly' reason."
+    }
+  ]
+}
